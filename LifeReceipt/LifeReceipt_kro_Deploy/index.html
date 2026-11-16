@@ -1,0 +1,1509 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>인생 영수증 | LIFE RECEIPT – 나의 시간 기록</title><meta name="robots" content="index,follow"><meta name="referrer" content="no-referrer"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://life-to-receipt.kro.kr/"><meta property="og:url" content="https://life-to-receipt.kro.kr/"><meta property="og:type" content="website"><meta property="og:image" content="https://life-to-receipt.kro.kr/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="description" content="지금까지 살아온 시간과 생활 습관을 한 장의 인생 영수증으로 확인해 보세요."><meta name="theme-color" content="#f4f1eb"><meta property="og:title" content="LIFE RECEIPT | 인생 영수증"><meta property="og:description" content="Your life, itemized. 지금까지의 시간을 한 장의 영수증으로."><style>*{box-sizing:border-box}body{margin:0;background:#eae8e1;color:#242820;font-family:system-ui,sans-serif}main{max-width:480px;margin:auto;padding:28px 18px}h1{font-size:32px;letter-spacing:-2px;margin:8px 0}p{color:#62665e;line-height:1.6}form{background:#fff;border-radius:20px;padding:20px;display:grid;gap:14px}label{display:grid;gap:6px;font-size:14px;font-weight:600}input,select{width:100%;padding:12px;border:1px solid #ccc;border-radius:9px;font-size:16px}button{border:0;border-radius:10px;background:#263e31;color:white;padding:14px;font-size:15px;font-weight:700;cursor:pointer}.receipt{margin-top:24px;background:#fffdf5;padding:26px 22px;box-shadow:0 8px 24px #0001;border-bottom:5px dotted #eae8e1}.receipt h2{text-align:center;font-family:monospace;letter-spacing:2px;margin:0}.sub{text-align:center;font-size:13px;color:#777}.line{display:flex;justify-content:space-between;gap:10px;padding:10px 0;font-size:14px;border-bottom:1px dashed #ddd}.line strong{text-align:right;font-variant-numeric:tabular-nums}.total{font-size:23px;text-align:center;font-weight:800;margin:16px 0}.actions{display:flex;gap:8px;margin-top:16px}.actions button{flex:1}.note{font-size:12px;color:#777;line-height:1.5}#error{color:#b42318;font-size:13px;margin:0}.barcode{height:30px;margin:20px auto 8px;width:75%;background:repeating-linear-gradient(90deg,#252525 0 2px,transparent 2px 5px,#252525 5px 9px,transparent 9px 12px,#252525 12px 13px,transparent 13px 17px)}@media print{body{background:white}form,.intro,.actions{display:none}.receipt{box-shadow:none;margin:0}main{padding:0}}
+body{background:#d9d7ce;background-image:radial-gradient(#bcbab0 1px,transparent 1px);background-size:18px 18px}main{max-width:560px}.intro{background:#202725;color:#e1f6bc;padding:24px;border-radius:18px 18px 5px 5px;box-shadow:0 5px 0 #111; margin-bottom:18px}.intro p{color:#b8c9ad}.intro small{font-family:monospace;letter-spacing:3px}form{background:#e8e7df;border:1px solid #b9b9ad;box-shadow:0 5px 0 #a7a79b,0 12px 25px #0002;border-radius:12px}input,select{background:#f9f8f0;border:1px solid #b6b8aa;box-shadow:inset 0 2px 3px #0001}button{background:#304d3b;box-shadow:0 4px 0 #172b20;transition:transform .12s}button:active{transform:translateY(3px);box-shadow:0 1px 0 #172b20}h2{font-size:19px}fieldset{border:1px solid #b9b9ad;border-radius:10px;padding:12px;display:grid;gap:10px;min-width:0}legend{font-weight:800;padding:0 5px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}.screen{background:#17241e;color:#c7f69d;border:5px solid #414842;border-radius:8px;padding:15px;font: bold 18px monospace;letter-spacing:1px;box-shadow:inset 0 0 12px #000}.screen small{display:block;font-size:11px;color:#a5b99b;margin-bottom:8px}.printer{margin-top:26px;background:#303733;border-radius:15px 15px 5px 5px;padding:16px 12px 8px;box-shadow:0 5px 0 #151b18;color:#d5dfd3;font:12px monospace;letter-spacing:2px}.slot{height:12px;background:#101411;border-radius:5px;margin-top:12px;box-shadow:0 2px 0 #616861}.paperwrap{overflow:hidden;padding:0 10px 12px}.receipt{margin:0;background:#fffdf4;box-shadow:0 6px 12px #0002;border-bottom:0;position:relative;clip-path:polygon(0 0,100% 0,100% 99%,98% 100%,96% 99%,94% 100%,92% 99%,90% 100%,88% 99%,86% 100%,84% 99%,82% 100%,80% 99%,78% 100%,76% 99%,74% 100%,72% 99%,70% 100%,68% 99%,66% 100%,64% 99%,62% 100%,60% 99%,58% 100%,56% 99%,54% 100%,52% 99%,50% 100%,48% 99%,46% 100%,44% 99%,42% 100%,40% 99%,38% 100%,36% 99%,34% 100%,32% 99%,30% 100%,28% 99%,26% 100%,24% 99%,22% 100%,20% 99%,18% 100%,16% 99%,14% 100%,12% 99%,10% 100%,8% 99%,6% 100%,4% 99%,2% 100%,0 99%)}.printing{animation:feed 2.1s cubic-bezier(.25,.7,.35,1) both}@keyframes feed{from{transform:translateY(-100%)}to{transform:translateY(0)}}.line{align-items:start}.line span{flex:0 0 30%}.line strong{flex:1;font-size:13px;line-height:1.55}.health h3{border-top:2px dashed #aaa;padding-top:18px}.note a{color:#304d3b}.total{font-family:monospace}.meter{height:8px;background:#ddd;border-radius:6px;overflow:hidden}.meter i{display:block;background:#42634c;height:100%}@media(prefers-reduced-motion:reduce){.printing{animation:none}}@media print{.printer{display:none}.paperwrap{overflow:visible}.receipt{clip-path:none;animation:none}}
+ .drinkchoices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:10px 0 16px}.drinkchoices button{padding:12px 4px;font-size:14px;background:#e1e3d8;color:#28372c;border:1px solid #aeb5a6;box-shadow:0 3px 0 #aeb5a6}.drinkchoices button[aria-pressed=true]{background:#334f3c;color:#fff;border-color:#334f3c;box-shadow:0 3px 0 #17241e}.stepper{display:flex;align-items:center;gap:8px}.stepper button{width:48px;flex:none;padding:10px;font-size:22px}.stepper input{min-width:0;text-align:center;flex:1}.stepper strong{white-space:nowrap}.drinkbox [hidden]{display:none!important}.drinkbox small{display:block;margin:8px 0} [hidden]{display:none!important}.survival-track{height:7px;background:#dedfd5;border-radius:5px;overflow:hidden;margin:0 0 12px}.survival-track div{height:100%;background:#527b58;border-radius:5px}.improve-card{background:#f1f2e8;border:1px solid #d4d9ca;border-radius:9px;padding:12px;margin:10px 0}.improve-card h4{margin:0 0 6px;font-size:15px}.improve-card p{margin:4px 0;font-size:13px}.improve-summary{background:#e5eddf;padding:14px;border-radius:8px;margin-top:12px}.improve-summary strong{color:#304d3b}.improve-summary .line span{flex:1}.improve-summary .line strong{flex:1}@media print{.improve-card,.improve-summary{break-inside:avoid}}
+/* V11 report hierarchy */
+main{max-width:540px;padding:24px 16px 48px}.receipt{padding:24px 18px;overflow-wrap:anywhere}.health{background:transparent!important;border:0!important;padding:0!important;margin-top:24px}.report-tag{font:700 11px/1.4 system-ui;letter-spacing:1.6px;color:#68786a;margin:0 0 10px}.hero-result{background:#192d25;color:#eaffdc;border-radius:16px;padding:24px 18px;text-align:center}.hero-result small{display:block;color:#c5d8c8;font-size:13px}.hero-result #lifeage{display:block;font-size:clamp(44px,12vw,64px);font-weight:800;letter-spacing:-3px;line-height:1.25;margin:6px 0}.hero-note{font-size:11px;color:#c5d8c8;margin:12px 0 0}.target-card{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid #d9ded2;border-radius:14px;padding:16px;margin:12px 0 26px;background:#f4f6ed}.target-card small{font-size:12px;color:#526357}.target-card strong{display:block;font-size:34px;letter-spacing:-1.5px;color:#263e31}.target-card p{font-size:11px;margin:3px 0}.ring{--pct:0%;width:84px;height:84px;flex:none;border-radius:50%;background:conic-gradient(#527b58 var(--pct),#dce4d7 0);display:grid;place-items:center;position:relative}.ring:before{content:'';position:absolute;inset:9px;background:#f4f6ed;border-radius:50%}.ring span{z-index:1;font-size:11px;color:#526357}.report-section{border-top:1px solid #d9ded2;padding:22px 0 8px}.report-section h3{font-size:20px;margin:0 0 6px;letter-spacing:-.6px}.section-note{font-size:12px;margin:0 0 14px}.report-section .line{border:0;padding:5px 0;font-size:13px}.survival-track{height:9px;margin-bottom:12px}.improve-summary{background:#e8efe3;border-radius:14px;padding:15px;margin:12px 0}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.compare-grid>div{background:#fffdf5;border-radius:10px;padding:12px 8px;text-align:center}.compare-grid small{display:block;font-size:12px;color:#62665e}.compare-grid strong{display:block;font-size:25px;letter-spacing:-1px}.gain{font-size:17px;font-weight:800;color:#304d3b;text-align:center}.compare-prob{font-size:13px;text-align:center;margin-top:8px}.improve-card{background:transparent;border:0;border-bottom:1px solid #d9ded2;border-radius:0;padding:10px 2px;margin:0}.past{border-top:1px solid #d9ded2;padding:14px 0}.past summary{cursor:pointer;font-size:13px;font-weight:700;color:#526357}.past a{color:#304d3b}.actions button{min-height:48px}button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #6d966f;outline-offset:2px}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important}}@media(max-width:360px){.receipt{padding:20px 12px}.target-card{padding:12px}.ring{width:65px;height:65px}.compare-grid strong{font-size:21px}}@media print{.past{display:block}.hero-result,.ring,.target-card{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+
+/* High contrast receipt gauges */
+.receipt .target-card{background:#f1f5ed;border-color:#b8c9b9;gap:16px}.receipt .ring{width:100px;height:100px;background:conic-gradient(#176b48 0 var(--pct),#c8d3c5 var(--pct) 100%);box-shadow:0 0 0 1px #a7bba9}.receipt .ring:before{inset:13px;background:#f1f5ed}.receipt .ring span{font-weight:800;color:#214b35;font-size:12px;text-align:center}.receipt .survival-track{height:15px;background:#d2dbce;border:1px solid #b8c7b5;border-radius:9px;margin:2px 0 16px;box-sizing:border-box}.receipt .survival-track div{background:linear-gradient(90deg,#176b48,#32875c);border-radius:8px;min-width:0}.receipt #modelrows .line strong{color:#174d34;font-size:15px;font-variant-numeric:tabular-nums}.receipt #modelrows .line span{color:#34483a;font-weight:600}.receipt .target-card strong{color:#174d34}.receipt .ring,.receipt .survival-track,.receipt .survival-track div{print-color-adjust:exact;-webkit-print-color-adjust:exact}@media(max-width:360px){.receipt .ring{width:80px;height:80px}.receipt .ring:before{inset:11px}.receipt .target-card{gap:8px}}
+ .past-first{margin-bottom:26px;padding-bottom:20px;border-bottom:2px dashed #c8d3c5}.past-first h3{font-size:19px;margin:16px 0 12px;letter-spacing:-.5px}.habit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0 18px}.habit-card{background:#edf2e9;border:1px solid #cdd9ca;border-radius:12px;padding:12px 10px;display:grid;gap:6px;min-width:0}.habit-card strong{font-size:clamp(17px,4.5vw,24px);color:#174d34;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}.habit-card small{font-size:12px;color:#40574a;overflow-wrap:anywhere}.past-first .hero-result span{font-size:clamp(27px,7vw,42px)}[hidden]{display:none!important} .default-notice{font-size:12px;line-height:1.5;color:#526357;margin:8px 0 14px} </style><style>.receipt-cta{margin:20px auto 9px;width:108px;height:108px}.receipt-qr{display:block;width:100%;height:100%;image-rendering:pixelated;background:#fff}@media print{.receipt-qr{print-color-adjust:exact;-webkit-print-color-adjust:exact}}</style><script>const dict={"언어 및 지역": ["Language & region", "言語と地域", "语言和地区"], "선택하세요": ["Select an option", "選択してください", "请选择"], "음주 유형을 선택하세요.": ["Select your drinking habits.", "飲酒習慣を選択してください。", "请选择饮酒习惯。"], "게임·영상 습관을 유지한 기간": ["Years of gaming/video habits", "ゲーム・動画の習慣年数", "游戏视频习惯年数"], "공부·일 습관을 유지한 기간": ["Years of study/work habits", "勉強・仕事の習慣年数", "学习工作习惯年数"], "나도 인생 영수증 만들기": ["Make my own receipt", "自分のレシートを作る", "制作我的收据"], "이 영수증의 예상 수명과 생존율은 인구 통계 및 생활 습관을 바탕으로 계산한 참고용 추정치입니다.": ["The estimated lifespan and survival rates on this receipt are for reference only, based on population statistics and lifestyle habits.", "このレシートの推定寿命と生存率は、人口統計と生活習慣に基づく参考値です。", "本小票中的预期寿命和生存率是根据人口统计及生活习惯计算的参考估计值。"], "누적 담배 지출": ["Estimated cigarette spending", "推定たばこ支出", "预计香烟支出"], "2026년 한국 기준 · 20개비 4,500원": ["South Korea, 2026 · KRW 4,500 per 20 cigarettes", "韓国2026年基準・20本4,500ウォン", "韩国2026年参考价 · 每20支4,500韩元"], "담배 가격 · 2026년 한국": ["Cigarette price · Korea 2026", "たばこ価格・韓国2026年", "香烟价格 · 韩国2026年"], "원": [" KRW", "ウォン", "韩元"], "기준 생존율 · 한국 2023년 생명표": ["Baseline survival · Korea 2023 life table", "基準生存率・韓国2023年生命表", "基准生存率 · 韩国2023年生命表"], "연령·성별 생존율과 기대여명의 기준. 앱은 기존에 내장된 표와 보간값을 사용합니다.": ["Baseline age- and sex-specific survival and remaining life expectancy. The app uses its existing embedded table and interpolation.", "年齢・性別別の生存率と平均余命の基準。アプリは既存の内蔵表と補間値を使用します。", "年龄和性别对应的生存率及剩余预期寿命基准。应用使用已有内置表和插值。"], "흡연 · NEJM (2013)": ["Smoking · NEJM (2013)", "喫煙・NEJM (2013)", "吸烟 · NEJM (2013)"], "흡연과 사망 위험, 금연의 장기적 이점 참고.": ["Smoking, mortality risk and long-term benefits of quitting.", "喫煙と死亡リスク、禁煙の長期的利点を参考。", "参考吸烟、死亡风险及戒烟的长期益处。"], "음주 · The Lancet (2018)": ["Alcohol · The Lancet (2018)", "飲酒・The Lancet (2018)", "饮酒 · The Lancet (2018)"], "음주량과 사망 위험의 관계 참고.": ["Association between alcohol intake and mortality.", "飲酒量と死亡リスクの関係を参考。", "参考饮酒量与死亡风险的关系。"], "운동 · BJSM (2023)": ["Physical activity · BJSM (2023)", "運動・BJSM (2023)", "运动 · BJSM (2023)"], "신체 활동량과 사망 위험의 관계 참고.": ["Association between physical activity and mortality.", "身体活動量と死亡リスクの関係を参考。", "参考身体活动量与死亡风险的关系。"], "BMI · The Lancet (2016)": ["BMI · The Lancet (2016)", "BMI・The Lancet (2016)", "BMI · The Lancet (2016)"], "BMI와 전체 사망 위험의 관계 참고.": ["Association between BMI and all-cause mortality.", "BMIと全死亡リスクの関係を参考。", "参考BMI与全因死亡风险的关系。"], "수면 · AASM/SRS (2015)": ["Sleep · AASM/SRS (2015)", "睡眠・AASM/SRS (2015)", "睡眠 · AASM/SRS (2015)"], "성인 수면 시간 권고 참고.": ["Adult sleep-duration recommendations.", "成人の睡眠時間の推奨を参考。", "参考成人睡眠时长建议。"], "화면 구성 · NHS Heart Age": ["Design · NHS Heart Age", "画面構成・NHS Heart Age", "界面设计 · NHS Heart Age"], "결과 표시와 건강 개선 안내 구성 참고. 의료 계산 모델은 적용하지 않았습니다.": ["Reference for result presentation and health guidance, not its clinical model.", "結果表示と健康改善案内の構成を参考。医療計算モデルは使用していません。", "参考结果展示和健康改善指引，未使用其临床模型。"], "참고 자료 및 계산 기준": ["Sources & calculation method", "参考資料と計算方法", "参考资料与计算方法"], "참고 자료 7개 · 펼쳐보기": ["7 references · expand", "参考資料7件・開く", "7项参考资料 · 展开"], "계산 방법": ["Calculation method", "計算方法", "计算方法"], "생존율은 기준 생명표의 생존자 수 비율에 생활 습관별 자체 위험 배수를 적용합니다. 기대수명은 생존 곡선을 적분하여 추정합니다. 위험 배수는 연구에서 직접 검증된 개인별 계수가 아니며, 선택한 지역의 생명표를 적용합니다.": ["Survival uses the baseline life-table survivor ratio with illustrative lifestyle hazard multipliers. Lifespan is estimated by integrating the survival curve. Multipliers are not validated individual coefficients; the selected region’s baseline is used.", "生存率は生命表の生存者数の比に独自の生活習慣リスク倍率を適用します。寿命は生存曲線の積分で推定します。倍率は個人向けに検証された係数ではなく、選択した地域の生命表を使用します。", "生存率以生命表存活人数比例为基础，应用自设生活习惯风险倍数。寿命通过生存曲线积分估算。倍数并非经验证的个体风险系数，使用所选地区的生命表。"], "아래 자료는 위험의 방향과 건강 권고를 참고하기 위한 것이며, 앱의 수명 예측 정확도를 검증하지 않습니다.": ["These references inform risk direction and health guidance; they do not validate the app’s lifespan estimates.", "以下の資料はリスクの方向性と健康指針の参考であり、アプリの寿命推定精度を検証するものではありません。", "以下资料用于参考风险方向和健康建议，并不验证应用寿命估算的准确性。"], "앞으로의 시간": ["My future life", "これからの人生", "未来人生"], "생활 습관 개선 전후": ["Future after improvements", "改善後の未来比較", "改善后的未来对比"], "예상 수명": ["Estimated lifespan", "推定寿命", "预计寿命"], "예상 수명 변화": ["Estimated lifespan change", "推定寿命の変化", "预计寿命变化"], "인생 영수증": ["Life Receipt", "人生レシート", "人生收据"], "나의 인생 영수증": ["My Life Receipt", "私の人生レシート", "我的人生收据"], "당신이 살아온 시간은 어디에 쓰였을까요": ["Where has your time gone", "あなたの時間はどこへ", "你的时间花在哪里了"], "현재 나이": ["Current age", "現在の年齢", "当前年龄"], "하루 평균 수면": ["Daily sleep", "平均睡眠時間", "每日睡眠"], "하루 평균 게임·영상": ["Daily gaming and videos", "ゲーム・動画の時間", "每日游戏和视频"], "하루 평균 공부·일": ["Daily study and work", "勉強・仕事の時間", "每日学习和工作"], "목표 수명": ["Target age", "目標年齢", "目标年龄"], "생활 습관": ["Future health analysis", "将来の健康分析", "未来健康分析"], "성별 (생명표 기준)": ["Reference group", "比較対象", "参考人群"], "남성": ["Male", "男性", "男性"], "여성": ["Female", "女性", "女性"], "흡연 상태": ["Smoking status", "喫煙状況", "吸烟情况"], "비흡연": ["Never smoked", "非喫煙", "从不吸烟"], "과거 흡연": ["Former smoker", "過去に喫煙", "曾经吸烟"], "현재 흡연": ["Current smoker", "現在喫煙", "目前吸烟"], "하루 담배 개비 (현재 흡연자": ["Cigarettes per day (current smoker", "一日の喫煙本数（喫煙者", "每日香烟支数（吸烟者"], "평소 음주": ["Alcohol habits", "飲酒習慣", "饮酒习惯"], "안 마셔요": ["None", "飲まない", "不喝酒"], "소주": ["Soju", "焼酎", "烧酒"], "맥주": ["Beer", "ビール", "啤酒"], "일주일에 몇 번 마시나요": ["Drinking days per week", "週に何回飲みますか", "每周喝几次"], "한 번에 얼마나 마시나요": ["Amount per occasion", "一回の飲酒量", "每次喝多少"], "순수 알코올": ["Pure alcohol", "純アルコール", "纯酒精"], "일주일에 운동하는 시간": ["Weekly exercise", "週の運動時間", "每周运动时间"], "걷기, 달리기, 헬스 등 운동 시간을 합쳐 입력하세요": ["Include walking, running and gym time", "歩行・ランニング・ジムの合計時間", "填写步行、跑步和健身的总时间"], "키": ["Height", "身長", "身高"], "몸무게": ["Weight", "体重", "体重"], "성인용 참고 분석. 개인 수명이나 질병을 진단하지 않습니다": ["For adults; not a medical diagnosis", "成人向けの参考情報です", "成人参考信息，非医学诊断"], "내 영수증 출력하기": ["Print my receipt", "人生レシートを発行", "打印人生收据"], "목표 나이 생존율": ["Survival to target age", "目標年齢までの生存率", "目标年龄生存率"], "현재 나이부터 목표 나이까지": ["From current age to target age", "現在から目標年齢まで", "从当前年龄到目标年龄"], "생존율 그래프": ["Survival chart", "生存率グラフ", "生存率图表"], "생존 가능성": ["Survival probability", "生存可能性", "生存概率"], "생존율": ["Survival", "生存率", "生存率"], "년마다 생존율 변화": [" year survival trend", "年ごとの生存率", "年生存率变化"], "현재 나이 기준 누적 생존율": ["Cumulative survival from current age", "現在年齢からの累積生存率", "从当前年龄起的累计生存率"], "건강을 위한 변화": ["My health improvements", "健康改善", "我的健康改善"], "지금까지 살아온 시간 보기": ["View time lived", "これまでの時間を見る", "查看已度过的时间"], "지금까지 살아온 시간": ["Time lived", "これまでの時間", "已度过的时间"], "목표 나이까지 남은 시간": ["Time until target age", "目標年齢までの時間", "距离目标年龄的时间"], "계산 기준 및 참고 자료": ["Method and references", "計算方法と参考資料", "计算方法与参考资料"], "남은 시간은 아직 당신의 것입니다": ["The time ahead is yours", "これからの時間はあなたのもの", "未来的时间属于你"], "과거 시간은 현재 습관을 기준으로 추정했습니다": ["Past time is estimated using current habits", "過去の時間は現在の習慣から推定", "过去时间按当前习惯估算"], "이미지 저장": ["Save image", "画像を保存", "保存图片"], "공유하기": ["Share", "共有", "分享"], "현재부터 약": ["From now, about ", "現在から約", "从现在起约"], "세까지 생존율": [" survival to this age", "歳までの生存率", "岁生存率"], "세 생존율": [" survival at this age", "歳の生存率", "岁生存率"], "년 후": [" years from now", "年後", "年后"], "현재": ["Current", "現在", "当前"], "개선 후": ["After changes", "改善後", "改善后"], "모든 개선을 유지할 경우": ["If all changes are maintained", "改善を継続した場合", "持续所有改善时"], "변화": ["Change", "変化", "变化"], "금연": ["Quit smoking", "禁煙", "戒烟"], "절주": ["Reduce alcohol", "節酒", "减少饮酒"], "운동 늘리기": ["Exercise more", "運動を増やす", "增加运动"], "수면 습관 개선": ["Improve sleep", "睡眠改善", "改善睡眠"], "체중 관리": ["Manage weight", "体重管理", "体重管理"], "현재 습관 유지": ["Maintain habits", "習慣を維持", "保持习惯"], "주간 순수 알코올": ["Pure alcohol per week", "週あたりの純アルコール量", "每周纯酒精摄入量"], "하루": ["Daily ", "一日", "每日"], "주": [" week", "週", "周"], "개비": [" cigarettes", "本", "支"], "병": [" bottles", "本", "瓶"], "캔": [" cans", "缶", "罐"], "분": [" min", "分", "分钟"], "시간": [" hours", "時間", "小时"], "세": [" years old", "歳", "岁"], "년": [" years", "年", "年"], "끼": [" meals", "食", "餐"], "수면": ["Sleep", "睡眠", "睡眠"], "게임·영상": ["Games and videos", "ゲーム・動画", "游戏和视频"], "공부·일": ["Study and work", "勉強・仕事", "学习和工作"], "그 외 일상": ["Other activities", "その他の日常", "其他活动"], "살아온 시간": ["Time lived", "生きた時間", "已度过时间"], "먹은 식사 (하루 3끼": ["Meals (3 per day", "食事（一日3食", "用餐（每日3餐"], "년의 인생 결산": [" years of life", "年の人生の記録", "年的人生记录"], "입력 대기": ["Ready", "入力待ち", "等待输入"], "결산 완료": ["Complete", "完了", "完成"], "기준": [" reference", "基準", "基准"], "참고용 추정치이며 실제 수명이나 생존 확률을 보장하지 않습니다": ["Illustrative estimates only; actual lifespan and survival may differ", "参考推定値であり、実際の寿命や生存率を保証しません", "仅供参考的估算，不保证实际寿命或生存概率"], "하루 시간 합계는 24시간 이하, 목표 나이는 현재 나이 이상이어야 합니다. 현재 흡연량도 입력하세요": ["Daily hours must total at most 24; target age must be at least current age. Enter cigarette count if smoking", "一日の合計は24時間以下、目標年齢は現在以上にしてください。喫煙本数も入力してください", "每日总时间不得超过24小时，目标年龄不得低于当前年龄。请填写吸烟量"], "계산 중 오류가 발생했습니다. 입력값을 확인해 주세요": ["Calculation error. Check your inputs", "計算エラー。入力を確認してください", "计算错误，请检查输入"], "영수증 내용을 복사했습니다": ["Receipt copied", "コピーしました", "已复制收据"], "영수증 내용을 복사하세요": ["Copy your receipt", "レシートをコピーしてください", "请复制收据"], "개비. 금연 상담이나 보건소 금연클리닉을 활용하세요. 장기 금연 시나리오입니다": [" cigarettes. Seek smoking cessation support. This assumes long-term quitting", "本。禁煙相談を活用しましょう。長期禁煙を想定", "支。建议寻求戒烟支持，假设长期戒烟"], "을 목표로 줄여보세요. 음주량이 많거나 금단 경험이 있다면 의료진과 상의하세요": [" as a reduction goal. Seek medical advice if drinking heavily or experiencing withdrawal", "を目標に減らしましょう。多量飲酒や離脱症状がある場合は医師に相談", "为减少目标。大量饮酒或有戒断症状请咨询医生"], "분. 빠르게 걷기 등 중강도 활동을 조금씩 늘려보세요": [" min. Gradually increase moderate activity such as brisk walking", "分。速歩など中強度の活動を徐々に増やしましょう", "分钟。逐步增加快走等中等强度活动"], "시간의 규칙적인 수면을 목표로 하세요. 지속적인 수면 문제는 진료를 고려하세요": [" hours of regular sleep. Seek care for persistent sleep problems", "時間の規則的な睡眠を目指しましょう。問題が続く場合は受診を", "小时规律睡眠。持续睡眠问题请考虑就医"], "무리한 감량이나 증량보다 균형 잡힌 식사와 활동을 통해 건강한 체중 범위를 목표로 하세요": ["Aim for a healthy weight through balanced meals and activity", "バランスのよい食事と活動で健康的な体重を目指しましょう", "通过均衡饮食和运动保持健康体重"], "입력한 항목에서 우선 개선할 부분이 없습니다. 정기 검진과 균형 잡힌 생활을 유지하세요": ["No priority changes identified. Maintain balanced habits and regular checkups", "優先改善項目はありません。定期健診とバランスのよい生活を", "未发现优先改善项。保持均衡生活和定期体检"], "한국 2023년 생명표로 표시된 기존 기준값과 자체 가정 위험 배수를 사용하는 체험용 모델입니다. 생활 습관을 장기간 유지한다고 가정하며, 질병·유전·의료 환경 등은 반영하지 않습니다. 개인별 실제 생존 확률이나 수명을 예측하지 않습니다": ["Uses reference values labeled as the 2023 Korean life table and assumed risk multipliers. Assumes long-term habits; excludes disease, genetics and healthcare. Not a validated personal prediction", "韓国2023年生命表の参考値と仮定したリスク倍率を使用。長期習慣を仮定し、疾病・遺伝・医療環境は考慮しません。個人予測ではありません", "使用标为韩国2023年生命表的参考值及假设风险倍数。假设长期习惯，不考虑疾病、遗传和医疗环境。非经验证的个人预测"], "화면 구성 참고": ["Design references", "デザイン参考", "设计参考"], "결과 및 개선 시나리오": ["Results and improvement scenarios", "結果と改善例", "结果及改善情景"], "해당 의료 계산 모델을 적용한 것은 아닙니다": ["Their medical models are not used", "医療計算モデルは使用していません", "未使用其医学计算模型"], "흡연": ["Smoking", "喫煙", "吸烟"], "음주": ["Alcohol", "飲酒", "饮酒"], "운동": ["Exercise", "運動", "运动"], "지금까지의 시간을 영수증 한 장에 담아보세요.": ["See your life so far in a single receipt.", "これまでの時間を一枚のレシートに。", "把迄今的人生时光汇成一张小票。"], "평소 음주량": ["Usual alcohol intake", "普段の飲酒量", "平时饮酒量"], "나이별 생존율": ["Survival by age", "年齢別生存率", "各年龄生存率"], "오늘의 기록, 내일의 시작.": ["Today’s record, tomorrow’s beginning.", "今日の記録、明日への一歩。", "记录今天，开启明天。"], "게임·영상과 공부·일은 입력한 유지 기간으로 계산합니다. 수면과 식사는 현재 평균을 전체 생애에 적용한 추정치입니다. 운동은 기타 시간에서 제외합니다.": ["Gaming/video and study/work totals use the durations entered. Sleep and meals are estimated by applying current averages across your lifetime. Exercise is excluded from other activities.", "ゲーム・動画と勉強・仕事は入力した継続期間で計算します。睡眠と食事は現在の平均を生涯に当てはめた推定値です。運動はその他の時間から除きます。", "游戏、视频及学习、工作按输入的持续年数计算。睡眠和用餐按当前平均值推算整个生涯。运动不计入其他活动时间。"], "위험 배수의 로그 합에 0.65를 곱하는 보수적 자체 가정을 적용하며, 고령 구간은 지수형 생존 곡선으로 연장하여 동일한 곡선에서 기대수명과 생존율을 계산합니다.": ["The model scales the sum of log hazard multipliers by 0.65 and extends the survival curve exponentially at advanced ages. Both life expectancy and survival are calculated from the same curve.", "リスク倍率の対数の合計に0.65を掛ける独自の仮定を用い、高齢期の生存曲線を指数関数で延長します。期待寿命と生存率は同じ曲線から計算します。", "模型将风险倍数的对数之和乘以0.65，并以指数曲线外推高龄生存率。预期寿命和生存率均由同一曲线计算。"], "110세 생존율은 95~100세 감소 추세를 연장한 추정치입니다.": ["Survival to age 110 is estimated by extending the decline observed from ages 95 to 100.", "110歳までの生存率は95～100歳の低下傾向を延長した推定値です。", "110岁生存率根据95至100岁的下降趋势外推。"], "하루 담배 개비 (현재 흡연자)": ["Cigarettes per day (current smokers)", "1日の喫煙本数（現在喫煙中の方）", "每日吸烟支数（当前吸烟者）"], "과거 하루 흡연량": ["Previous cigarettes per day", "過去の1日の喫煙本数", "过去每日吸烟支数"], "하루 담배 개비": ["Cigarettes per day", "1日の喫煙本数", "每日吸烟支数"], "흡연 기간": ["Smoking duration", "喫煙期間", "吸烟年数"], "음주 기간": ["Drinking duration", "飲酒期間", "饮酒年数"], "운동 기간": ["Exercise duration", "運動期間", "运动年数"], "먹은 식사 (하루 3끼)": ["Meals eaten (3 per day)", "食事回数（1日3回）", "用餐次数（每日3餐）"], "대한민국 · 2023년 생명표": ["South Korea · 2023 life table", "韓国・2023年生命表", "韩国 · 2023年生命表"], "질병관리청 국가건강정보포털": ["KDCA · National Health Information Portal", "韓国疾病管理庁・健康情報ポータル", "韩国疾病管理厅 · 国家健康信息门户"], "기존 내장 생명표 및 보간값.": ["Built-in life table and interpolated values.", "内蔵生命表と補間値を使用。", "使用内置生命表及插值。"], "회": [" times", "回", "次"], "PRINTING / 결산 완료": ["PRINTING / Complete", "印刷中 / 完了", "打印中 / 已完成"], "일": [" days", "日", "天"], "갑": [" packs", "箱", "包"], "약": ["About ", "約", "约"], "목표 수명 (세)": ["Target age (years)", "目標年齢（歳）", "目标年龄（岁）"], "하루 평균 수면 (시간)": ["Average daily sleep (hours)", "1日の平均睡眠時間（時間）", "每日平均睡眠（小时）"], "하루 평균 게임·영상 (시간)": ["Daily gaming / video (hours)", "1日のゲーム・動画時間（時間）", "每日游戏及视频（小时）"], "하루 평균 공부·일 (시간)": ["Daily study / work (hours)", "1日の勉強・仕事時間（時間）", "每日学习及工作（小时）"], "일주일에 운동하는 시간 (분)": ["Weekly exercise (minutes)", "1週間の運動時間（分）", "每周运动（分钟）"], "게임·영상 습관을 유지한 기간 (년)": ["Years of gaming / video habits", "ゲーム・動画の継続年数", "游戏及视频习惯年数"], "공부·일 습관을 유지한 기간 (년)": ["Years of study / work habits", "勉強・仕事の継続年数", "学习及工作习惯年数"], "과거 평균 하루 담배 개비": ["Previous daily cigarette count", "過去の1日平均喫煙本数", "过去每日平均吸烟支数"], "소주 1병": ["1 bottle of soju", "焼酎（ソジュ）1本", "1瓶韩国烧酒"], "맥주 1캔": ["1 can of beer", "ビール1缶", "1罐啤酒"], "g / 주": ["g / week", "g / 週", "克 / 周"]};Object.assign(dict,{"지금까지 살아온 시간": ["Your life so far", "これまでの人生", "迄今的人生"], "생활 기록": ["Lifetime habits", "生活習慣の累計", "累计生活习惯"], "흡연 기간 (년)": ["Years smoked", "喫煙年数", "吸烟年数"], "성인 이후 음주 기간 (년)": ["Years drinking since age 19", "19歳以降の飲酒年数", "19岁后的饮酒年数"], "성인 이후 누적 음주": ["Total drinks since legal drinking age", "飲酒可能年齢以降の累計飲酒量", "法定饮酒年龄后累计饮酒量"], "음주 기간은 만 19세 이후의 기간만 입력하세요.": ["Enter only drinking years since age 19.", "19歳以降の飲酒年数を入力してください。", "仅输入19岁后的饮酒年数。"], "운동 기간 (년)": ["Years exercising", "運動年数", "运动年数"], "과거 평균 하루 담배 개비": ["Past average cigarettes per day", "過去の一日平均喫煙本数", "过去每日平均香烟支数"], "누적 담배": ["Total cigarettes", "累計たばこ", "累计香烟"], "누적 음주": ["Total drinks", "累計飲酒量", "累计饮酒量"], "누적 운동": ["Total exercise", "累計運動時間", "累计运动时间"], "누적 순수 알코올": ["Total pure alcohol", "累計純アルコール", "累计纯酒精"], "누적 통계는 입력한 기간과 평균 습관으로 추정합니다.": ["Totals use the entered duration and average habits.", "入力した期間と平均習慣から推定します。", "根据输入的年数和平均习惯估算。"], "기간은 현재 나이 이하로 입력하세요.": ["Duration must not exceed your age.", "期間は現在の年齢以下にしてください。", "年数不得超过当前年龄。"], "일": [" days", "日", "天"], "갑": [" packs", "箱", "包"], "약": ["About ", "約", "约"]});Object.assign(dict,{"수면 (시간/일)": ["Sleep (h/day)", "睡眠（時間/日）", "睡眠（小时/天）"], "게임·영상 (시간/일)": ["Gaming & video (h/day)", "ゲーム・動画（時間/日）", "游戏视频（小时/天）"], "공부·일 (시간/일)": ["Study & work (h/day)", "勉強・仕事（時間/日）", "学习工作（小时/天）"], "게임·영상 기간 (년)": ["Gaming & video (years)", "ゲーム・動画（年）", "游戏视频（年）"], "공부·일 기간 (년)": ["Study & work (years)", "勉強・仕事（年）", "学习工作（年）"]});Object.assign(dict,{
+ '나의 시간, 한 장의 영수증.':['Your life, itemized.','人生を、一枚のレシートに。','人生，一张清单。'],
+ '나이와 일상 습관을 입력하면 지금까지의 시간과 앞으로의 가능성을 확인할 수 있어요.':['Enter your age and daily habits to explore your time so far and the possibilities ahead.','年齢と日々の習慣から、これまでの時間とこれからの可能性を確認できます。','输入年龄和日常习惯，了解过去的时间与未来的可能性。'],
+ '기본 정보':['Basic information','基本情報','基本信息'], '하루 일과':['Daily routine','一日の過ごし方','每日作息'], '건강 정보':['Health information','健康情報','健康信息'],
+ '사용 기간':['Years of habits','習慣の継続年数','习惯持续年数'], '이미지 저장 형식':['Image format','画像の形式','图片格式'],
+ '전체 영수증':['Full receipt','レシート全体','完整小票'], '인스타 피드':['Instagram feed','Instagram フィード','Instagram 动态'], '인스타 스토리':['Instagram story','Instagram ストーリー','Instagram 限时动态'],
+ '이미지 미리보기':['Image preview','画像プレビュー','图片预览'], 'PNG 저장':['Save PNG','PNGを保存','保存 PNG'], '닫기':['Close','閉じる','关闭'],
+ '전체 결과를 한 장에 저장하거나, 인스타그램용 요약 이미지를 만들 수 있어요.':['Save the full result or create a summary image for Instagram.','全結果またはInstagram用の要約画像を保存できます。','保存完整结果，或生成 Instagram 摘要图片。'],
+ '예상 수명·생존율은 검증된 개인 예측이 아닌 참고용 추정치입니다.':['Lifespan and survival are illustrative estimates, not validated personal predictions.','寿命・生存率は個人向けに検証された予測ではなく、参考推定値です。','寿命和生存率仅供参考，并非经验证的个人预测。'],
+ '이미지 생성에 실패했습니다. 다시 시도해 주세요.':['Could not create the image. Please try again.','画像の作成に失敗しました。もう一度お試しください。','图片生成失败，请重试。'],
+ '키 (cm)':['Height (cm)','身長 (cm)','身高 (cm)'], '몸무게 (kg)':['Weight (kg)','体重 (kg)','体重 (kg)'], '광고 영역':['Advertisement space','広告スペース','广告区域'], '광고 준비 중':['Ad space reserved','広告掲載準備中','广告位预留'],
+ '연령':['Age','年齢','年龄'], '수명 추정치':['Estimated lifespan','推定寿命','预计寿命'], '목표 생존율':['Target survival','目標生存率','目标生存率'],
+ '내 시간의 기록':['My time record','時間の記録','我的时间记录'], '총 수면 시간':['Total sleep','総睡眠時間','总睡眠时间'], '게임·영상 시간':['Gaming & video','ゲーム・動画時間','游戏视频时间'], '공부·일 시간':['Study & work','勉強・仕事時間','学习工作时间'], '총 운동 시간':['Total exercise','総運動時間','总运动时间'],
+ '시간의 가치는 숫자 너머에 있습니다.':['Time is worth more than numbers.','時間の価値は数字の先にあります。','时间的价值不止于数字。']
+});let saved;try{saved=localStorage.getItem('lifeLang')}catch(e){}const supported=['ko','en','ja','zh'];let pendingLang=null;try{pendingLang=sessionStorage.getItem('lifeNextLang');sessionStorage.removeItem('lifeNextLang')}catch(e){}const requestedLang=supported.includes(pendingLang)?pendingLang:new URLSearchParams(location.search).get('lang');const lang=supported.includes(requestedLang)?requestedLang:supported.includes(saved)?saved:(supported.includes(navigator.language.slice(0,2))?navigator.language.slice(0,2):'en');let resultRegion=lang;const locale={ko:'ko-KR',en:'en-US',ja:'ja-JP',zh:'zh-CN'}[lang];document.documentElement.lang=lang;Object.assign(dict,{"인생 영수증이란?": ["What is Life Receipt?", "人生レシートとは？", "什么是人生小票？"], "나이와 하루 평균 수면·공부·게임 시간을 바탕으로 지금까지의 삶을 시간 단위로 정리하는 무료 도구입니다. 운동과 흡연·음주 기록도 함께 확인할 수 있습니다.": ["A free tool that summarizes your life in hours using your age and daily sleep, study and gaming habits. It also summarizes exercise, smoking and drinking.", "年齢と毎日の睡眠・勉強・ゲーム時間から、これまでの人生を時間単位で整理する無料ツールです。運動・喫煙・飲酒の記録も確認できます。", "根据年龄、每日睡眠、学习和游戏时间，免费汇总至今的人生时间，也可查看运动、吸烟及饮酒记录。"], "수명과 생존율은 생활 습관을 가정한 체험용 추정치이며, 실제 개인의 수명을 예측하거나 질병을 진단하지 않습니다.": ["Lifespan and survival are illustrative estimates based on lifestyle assumptions, not individual predictions or medical diagnoses.", "寿命と生存率は生活習慣を仮定した参考推定値で、個人の寿命予測や診断ではありません。", "寿命和生存率是基于生活习惯假设的体验性估算，不用于预测个人寿命或诊断疾病。"], "이용 방법 및 계산 기준": ["Guide and calculation method", "使い方と計算方法", "使用指南与计算方法"], "Guide · 이용 안내": ["Guide", "利用ガイド", "使用指南"], "Privacy · 개인정보": ["Privacy", "プライバシー", "隐私"]});const keys=Object.keys(dict).sort((a,b)=>b.length-a.length);const pattern=new RegExp(keys.map(k=>k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'g');const uiLabels={'LIFE RECEIPT':['LIFE RECEIPT','LIFE RECEIPT','LIFE RECEIPT','LIFE RECEIPT'],'LIFE RECORD':['LIFE RECORD','LIFE RECORD','人生の記録','人生记录'],'RECEIPT PRINTER':['RECEIPT PRINTER','RECEIPT PRINTER','レシートプリンター','小票打印机'],'01 / PAST':['01 / PAST','01 / PAST','01 / 過去','01 / 过去'],'02 / FUTURE':['02 / FUTURE','02 / FUTURE','02 / 未来','02 / 未来'],'03 / SURVIVAL':['03 / SURVIVAL','03 / SURVIVAL','03 / 生存率','03 / 生存率'],'04 / HEALTH':['04 / HEALTH','04 / HEALTH','04 / 健康','04 / 健康'],'END OF RECEIPT':['END OF RECEIPT','END OF RECEIPT','レシート終了','小票结束']};function tr(t){let v=String(t);if(uiLabels[v.trim()])return v.replace(v.trim(),uiLabels[v.trim()][supported.indexOf(lang)]);return lang==='ko'?v:v.replace(pattern,k=>dict[k][supported.indexOf(lang)-1]);}function translate(root){if(root.nodeType===3){{const translated=tr(root.data);if(translated!==root.data)root.data=translated;}return;}if(root.nodeType!==1&&root.nodeType!==9)return;if(['SCRIPT','STYLE'].includes(root.tagName)||root.id==='language')return;for(const a of ['aria-label','title','placeholder'])if(root.hasAttribute?.(a))root.setAttribute(a,tr(root.getAttribute(a)));for(const n of Array.from(root.childNodes))translate(n);}document.addEventListener('DOMContentLoaded',()=>{const sel=document.getElementById('language');sel.value=lang;sel.onchange=()=>{try{localStorage.setItem('lifeLang',sel.value)}catch(e){}const next=new URL(location.href);next.searchParams.set('lang',sel.value);if(location.protocol==='http:'||location.protocol==='https:'){location.assign(next.href);return;}try{sessionStorage.setItem('lifeNextLang',sel.value);location.reload();}catch(e){location.assign(next.href);}};{translate(document);new MutationObserver(records=>{for(const r of records){if(r.type==='characterData')translate(r.target);else for(const n of r.addedNodes)translate(n)}}).observe(document.body,{subtree:true,childList:true,characterData:true});}});</script><style>.receipt .health{display:grid;gap:24px}.receipt .health>section{margin:0;padding:18px 14px 20px;border:1px solid #cbd6c8;border-radius:14px;background:#fffdf5;min-width:0}.receipt .health>section .report-tag{display:block;background:#e5eee2;color:#24553c;border-radius:6px;padding:8px 10px;margin:0 0 12px;font-size:11px;letter-spacing:1px}.receipt .health>section h3{border:0;padding:0;margin:0 0 14px;font-size:20px;line-height:1.35;color:#20392b}.receipt .past-first h3:not(:first-of-type){margin-top:20px}.receipt .target-card{margin-bottom:0}.receipt #improvements{display:grid;gap:10px;margin:0 0 18px}.receipt .improve-card{background:#f0f4eb;border:1px solid #d1ddce;border-left:4px solid #34734e;border-radius:9px;padding:12px;margin:0}.receipt .improve-card h4{color:#234b35;font-size:15px;margin:0 0 6px}.receipt .improve-card p{color:#394b40;line-height:1.6;margin:0}.receipt .compare-heading{border-top:1px dashed #b7c7b6;padding-top:16px;margin:0 0 10px;font-size:15px;color:#234b35}.receipt .improve-summary{margin:0}.receipt .health>details{margin:0}.receipt .health>[hidden]{display:none!important}@media(max-width:380px){.receipt .health>section{padding:14px 10px}.receipt .health{gap:18px}.receipt .habit-card{padding:10px 7px}.receipt .compare-grid strong{font-size:21px}}@media print{.receipt .health>section{break-inside:auto}.receipt .improve-card{break-inside:avoid}}</style><style>.sources{margin:12px 10px 0;background:#f7f8f1;border:1px solid #b9c9b8;border-radius:12px;color:#243e30;overflow:hidden}.sources[hidden]{display:none}.sources summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px;cursor:pointer;font-weight:750;list-style:none}.sources summary::-webkit-details-marker{display:none}.sources summary small{display:block;font-size:12px;font-weight:400;color:#53675a;margin-top:4px}.source-chevron{font-size:23px;transition:transform .2s}.sources[open] .source-chevron{transform:rotate(180deg)}.source-body{border-top:1px solid #d4dfd0;padding:16px}.source-body h3{font-size:15px;margin:0}.source-body p{font-size:12px;margin:6px 0 12px;color:#526357}.source-body ol{padding-left:20px;margin:0}.source-body li{padding:10px 0;border-top:1px solid #d4dfd0}.source-body a{color:#176b48;font-size:14px;font-weight:700;overflow-wrap:anywhere}.source-body a:focus-visible{outline:2px solid #176b48;outline-offset:3px}@media print{.sources{display:none}}</style><style>.habit-card.smoking-card{grid-column:1 / -1;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:12px;align-items:center}.smoking-card>small,.smoking-card>strong{grid-column:1}.smoking-cost{grid-column:2;grid-row:1 / 4;border-left:1px solid #c1d0bf;padding-left:12px;display:grid;gap:6px;min-width:0}.smoking-cost strong{font-size:clamp(16px,4.2vw,23px)}@media(max-width:340px){.habit-card.smoking-card{grid-template-columns:1fr}.smoking-cost{grid-column:1;grid-row:auto;border-left:0;border-top:1px solid #c1d0bf;padding:9px 0 0}}</style><style>
+.receipt{--paper:#fffdf4;background:var(--paper);color:#252820;clip-path:polygon(0 0,100% 0,100% calc(100% - 10px),98% calc(100% - 0px),96% calc(100% - 10px),94% calc(100% - 0px),92% calc(100% - 10px),90% calc(100% - 0px),88% calc(100% - 10px),86% calc(100% - 0px),84% calc(100% - 10px),82% calc(100% - 0px),80% calc(100% - 10px),78% calc(100% - 0px),76% calc(100% - 10px),74% calc(100% - 0px),72% calc(100% - 10px),70% calc(100% - 0px),68% calc(100% - 10px),66% calc(100% - 0px),64% calc(100% - 10px),62% calc(100% - 0px),60% calc(100% - 10px),58% calc(100% - 0px),56% calc(100% - 10px),54% calc(100% - 0px),52% calc(100% - 10px),50% calc(100% - 0px),48% calc(100% - 10px),46% calc(100% - 0px),44% calc(100% - 10px),42% calc(100% - 0px),40% calc(100% - 10px),38% calc(100% - 0px),36% calc(100% - 10px),34% calc(100% - 0px),32% calc(100% - 10px),30% calc(100% - 0px),28% calc(100% - 10px),26% calc(100% - 0px),24% calc(100% - 10px),22% calc(100% - 0px),20% calc(100% - 10px),18% calc(100% - 0px),16% calc(100% - 10px),14% calc(100% - 0px),12% calc(100% - 10px),10% calc(100% - 0px),8% calc(100% - 10px),6% calc(100% - 0px),4% calc(100% - 10px),2% calc(100% - 0px),0% calc(100% - 10px));padding:30px 22px 36px;box-shadow:0 4px 10px #0002;position:relative;border:0;border-radius:0;font-family:system-ui,sans-serif;}
+.receipt .cut-edge{display:block;position:absolute;bottom:0;left:0;width:100%;height:12px;background:#fffdf4;}
+.receipt h2{font-size:29px;letter-spacing:3px;font-weight:900;color:#222820;line-height:1.2}.receipt>.sub{font-size:11px;letter-spacing:.5px;color:#62645b;margin:10px 0 20px}.receipt>.sub:last-of-type{margin:8px 0 0}.receipt .receipt-meta{border-top:1px dashed #77796d;border-bottom:1px dashed #77796d;padding:9px 0;display:flex;justify-content:space-between;font:11px monospace;color:#56594e;letter-spacing:1px}.receipt .health{gap:0;margin-top:0}.receipt .health>section{border:0;border-bottom:1px dashed #85877b;border-radius:0;background:transparent;padding:20px 0;margin:0}.receipt .health>section .report-tag{background:transparent;border-radius:0;padding:0;color:#606358;font:700 11px monospace;letter-spacing:1.5px;margin:0 0 8px}.receipt .health>section h3{color:#252820;font-size:19px;margin:0 0 13px}.receipt .hero-result{background:#edf0e6;border:1px solid #b9c3b3;border-radius:0;color:#244c36;padding:17px 8px}.receipt .hero-result small{color:#4b5c4e}.receipt .hero-result span{font-family:monospace;font-variant-numeric:tabular-nums}.receipt .habit-grid{gap:0;margin:8px 0 14px;border-top:1px dashed #a5a79a}.receipt .habit-card{background:transparent;border:0;border-bottom:1px dashed #a5a79a;border-radius:0;padding:12px 8px;gap:4px}.receipt .habit-card strong{font-family:monospace;color:#263d2d;font-size:clamp(16px,4.3vw,23px)}.receipt .habit-card small{color:#555b50}.receipt .habit-card:not(.smoking-card):nth-child(odd){border-left:1px dashed #a5a79a}.receipt .smoking-cost{border-left:1px dashed #a5a79a}.receipt .line{border-bottom:1px dotted #b8b9ad;padding:7px 0}.receipt .line strong{font-family:monospace;color:#292e25}.receipt .target-card{border-radius:0;background:#f1f5ed}.receipt .survival-track{border-radius:2px;height:12px}.receipt .survival-track div{border-radius:1px}.receipt .improve-card{border-radius:0;background:#f0f2e9;border:0;border-left:3px solid #34734e}.receipt .improve-summary,.receipt .compare-grid>div{border-radius:0}.receipt .barcode{height:43px;margin:24px auto 8px;width:82%}.receipt .receipt-end{font:10px monospace;text-align:center;letter-spacing:2px;color:#555b50;margin:0 0 9px}.paperwrap{padding-bottom:15px}.receipt .section-note{color:#62645b}.receipt .compare-heading{color:#252820}@media(max-width:360px){.receipt{padding:24px 14px 32px}.receipt h2{font-size:25px}.receipt .habit-card{padding:10px 5px}}@media print{.receipt{box-shadow:none}}
+</style><style>
+/* Precision receipt layout: shared baseline, equal columns and symmetric paper edge. */
+.receipt{clip-path:polygon(0 0,100% 0,100% calc(100% - 7px),97.916667% calc(100% - 0px),95.833333% calc(100% - 7px),93.750000% calc(100% - 0px),91.666667% calc(100% - 7px),89.583333% calc(100% - 0px),87.500000% calc(100% - 7px),85.416667% calc(100% - 0px),83.333333% calc(100% - 7px),81.250000% calc(100% - 0px),79.166667% calc(100% - 7px),77.083333% calc(100% - 0px),75.000000% calc(100% - 7px),72.916667% calc(100% - 0px),70.833333% calc(100% - 7px),68.750000% calc(100% - 0px),66.666667% calc(100% - 7px),64.583333% calc(100% - 0px),62.500000% calc(100% - 7px),60.416667% calc(100% - 0px),58.333333% calc(100% - 7px),56.250000% calc(100% - 0px),54.166667% calc(100% - 7px),52.083333% calc(100% - 0px),50.000000% calc(100% - 7px),47.916667% calc(100% - 0px),45.833333% calc(100% - 7px),43.750000% calc(100% - 0px),41.666667% calc(100% - 7px),39.583333% calc(100% - 0px),37.500000% calc(100% - 7px),35.416667% calc(100% - 0px),33.333333% calc(100% - 7px),31.250000% calc(100% - 0px),29.166667% calc(100% - 7px),27.083333% calc(100% - 0px),25.000000% calc(100% - 7px),22.916667% calc(100% - 0px),20.833333% calc(100% - 7px),18.750000% calc(100% - 0px),16.666667% calc(100% - 7px),14.583333% calc(100% - 0px),12.500000% calc(100% - 7px),10.416667% calc(100% - 0px),8.333333% calc(100% - 7px),6.250000% calc(100% - 0px),4.166667% calc(100% - 7px),2.083333% calc(100% - 0px),0.000000% calc(100% - 7px));padding:28px clamp(14px,4.5vw,24px) 30px;overflow-wrap:normal;box-shadow:none}
+.paperwrap{padding-inline:12px;filter:drop-shadow(0 4px 4px #0002)}
+.receipt h2{font-size:clamp(22px,6vw,29px);letter-spacing:.09em;line-height:1.25;margin:0;text-align:center}
+.receipt>.sub{margin:8px 0 18px;line-height:1.5;letter-spacing:0}
+.receipt .receipt-meta{gap:8px;align-items:center;letter-spacing:.06em;font-size:10px}
+.receipt .health>section{padding:20px 0;border-bottom:1px dashed #85877b;margin:0;min-width:0}
+.receipt .health>section h3{font-size:18px;line-height:1.4;margin:0 0 12px;padding:0;border:0;overflow-wrap:anywhere}
+.receipt .health>section .report-tag{margin:0 0 6px;line-height:1.4;letter-spacing:.09em}
+.receipt .hero-result{padding:16px 10px;margin:0 0 16px;display:grid;gap:5px;justify-items:center;min-width:0}
+.receipt .hero-result span,.receipt .hero-result #lifeage{font-size:clamp(27px,8vw,43px);line-height:1.15;letter-spacing:-.04em;margin:0;overflow-wrap:anywhere}
+.receipt .hero-result small{line-height:1.5;text-align:center}
+.receipt .habit-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 12px;gap:0;border-top:1px dashed #a5a79a}
+.receipt .habit-card{padding:12px 10px;gap:5px;align-content:start;min-width:0;grid-template-rows:minmax(2.8em,auto) auto auto;line-height:1.4}
+.receipt .habit-card small{font-size:11px;line-height:1.4;overflow-wrap:anywhere}
+.receipt .habit-card strong,.receipt .smoking-cost strong{font-size:clamp(16px,4.2vw,22px);line-height:1.25;letter-spacing:-.04em;overflow-wrap:anywhere}
+.receipt .habit-card:not(.smoking-card):nth-child(odd){border-left:1px dashed #a5a79a}
+.receipt .habit-card.smoking-card{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto auto;column-gap:0;align-items:start;padding:12px 0}
+.receipt .smoking-card>small,.receipt .smoking-card>strong{padding-inline:10px}
+.receipt .smoking-cost{padding:0 10px;gap:5px;align-self:stretch;align-content:start;border-left:1px dashed #a5a79a;border-top:0;grid-column:2;grid-row:1 / 4}
+.receipt .habit-card:last-child{grid-column:1/-1;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto auto;align-items:center;border-left:0;padding:12px 10px}
+.receipt .habit-card:last-child>small:first-child{grid-column:1;grid-row:1/3;align-self:center}
+.receipt .habit-card:last-child>strong,.receipt .habit-card:last-child>small:last-child{grid-column:2;text-align:right}
+.receipt .line{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:10px;align-items:baseline;padding:8px 0;line-height:1.4}
+.receipt .line span,.receipt .line strong{min-width:0;overflow-wrap:anywhere;font-size:13px}
+.receipt .target-card{margin:0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;padding:14px;align-items:center}
+.receipt .target-card>div:first-child{min-width:0;overflow-wrap:anywhere}
+.receipt .target-card strong{font-size:clamp(26px,7vw,34px);line-height:1.2;letter-spacing:-.04em}
+.receipt .ring{width:clamp(68px,20vw,94px);height:auto;aspect-ratio:1;box-shadow:none}
+.receipt .ring:before{inset:11px}
+.receipt #modelrows .line{border:0;padding:0 0 5px;grid-template-columns:1fr 1fr}
+.receipt .survival-track{margin:0 0 13px;height:12px}
+.receipt .survival-track:last-child{margin-bottom:0}
+.receipt #improvements{display:grid;gap:8px}
+.receipt .improve-card{padding:11px 12px;margin:0;overflow-wrap:anywhere}
+.receipt .compare-heading{margin:16px 0 10px;padding-top:14px}
+.receipt .improve-summary{margin:0;padding:12px;min-width:0}
+.receipt .compare-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:10px 0}
+.receipt .compare-grid>div{padding:10px 4px;min-width:0;display:grid;gap:4px;align-content:start}
+.receipt .compare-grid strong{font-size:clamp(19px,5.5vw,25px);line-height:1.25;overflow-wrap:anywhere}
+.receipt .compare-grid small{line-height:1.4;overflow-wrap:anywhere}
+.receipt .compare-prob{line-height:1.5;overflow-wrap:anywhere}
+.receipt .barcode{width:76%;height:38px;margin:22px auto 9px;background-size:17px 100%}
+.receipt .receipt-end{letter-spacing:.08em;line-height:1.5;margin:0}
+.receipt>.sub:last-of-type{margin:7px 0 0}
+@media(max-width:360px){.paperwrap{padding-inline:8px}.receipt .habit-card{padding-inline:7px}.receipt .smoking-card>small,.receipt .smoking-card>strong,.receipt .smoking-cost{padding-inline:7px}.receipt .target-card{padding:10px;gap:8px}}
+@media print{.paperwrap{filter:none}.receipt{clip-path:none}}
+</style><style>#f [aria-invalid=true]{border:2px solid #b93832!important;outline:2px solid #b9383233}.field-error{display:block;color:#b93832;font-size:12px;line-height:1.5;margin:5px 0}#error{white-space:pre-line;line-height:1.6}</style><style>
+.receipt .hero-result{grid-template-columns:minmax(0,1fr);height:auto;min-height:0;align-content:center;gap:8px}
+.receipt .hero-result #livedhours,.receipt .hero-result #lifeage{display:block;max-width:100%;width:max-content;white-space:nowrap;overflow-wrap:normal;word-break:normal;line-height:1.3;font-family:system-ui,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.035em;font-weight:800;margin:0;justify-self:center}
+.receipt .hero-result small{position:static;white-space:normal;line-height:1.5;min-width:0;margin:0}
+.receipt .habit-card strong,.receipt .line strong,.receipt .compare-grid strong{word-break:keep-all;overflow-wrap:normal;font-variant-numeric:tabular-nums}
+</style><style>
+/* Final visual system: restrained thermal paper and utilitarian checkout. */
+:root{--ink:#252b26;--muted:#646b60;--paper:#fffdf5;--accent:#285a43;--rule:#b5b6a9}
+body{background:#e5e2d9;background-image:none;color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:520px;padding:24px 16px 48px}
+.intro{background:#29332d;color:#fffdf5;border-radius:8px 8px 3px 3px;padding:24px 22px;box-shadow:0 3px 0 #1c241f;margin-bottom:16px}
+.intro small{font-size:11px;letter-spacing:.16em;color:#c4d1c2}.intro h1{font-size:30px;letter-spacing:-.055em;margin:9px 0 6px}.intro p{font-size:14px;margin:0;color:#d1d9ce}
+form{border-radius:8px;background:#f2f0e8;border-color:#c5c4b8;padding:18px;gap:15px;box-shadow:0 3px 0 #c4c1b5}
+label{font-weight:600;line-height:1.45}input,select{border-radius:5px;background:#fffdf7;box-shadow:none;color:var(--ink)}
+button{border-radius:5px;box-shadow:0 2px 0 #172b20}button:active{transform:translateY(1px);box-shadow:0 1px 0 #172b20}
+.screen{border-width:3px;border-radius:5px;box-shadow:none;font-size:16px;letter-spacing:0}.screen small{letter-spacing:.1em}
+.printer{border-radius:8px 8px 3px 3px;letter-spacing:.1em;box-shadow:0 3px 0 #151b18}
+.receipt{background:var(--paper);color:var(--ink);padding:28px 20px 32px;box-shadow:none}
+.receipt h2{font-size:clamp(22px,6vw,29px);letter-spacing:.12em;font-weight:700}
+.receipt .report-tag{font-family:monospace;font-size:11px;letter-spacing:.12em;color:#6b7064;font-weight:600}
+.receipt .health>section h3{font-size:19px;letter-spacing:-.045em;font-weight:750;margin-bottom:14px}
+.receipt .hero-result{background:#eeefe6;border:1px solid #c9cec1;border-radius:0;padding:18px 10px;gap:7px}
+.receipt .hero-result #livedhours,.receipt .hero-result #lifeage{color:var(--accent);font-weight:750;letter-spacing:-.035em;font-size:clamp(25px,7vw,39px)}
+.receipt .hero-result small{color:var(--muted);font-size:12px}.receipt .target-card{border-radius:0;background:#f1f3eb;border-color:#c9cec1}
+.receipt .habit-card,.receipt .smoking-cost{background:transparent;border-radius:0}.receipt .habit-card strong,.receipt .line strong{color:#303b32}
+.receipt .survival-track{border-radius:2px;height:12px}.receipt .survival-track div{border-radius:0;background:#286849}
+.receipt .improve-card{border-radius:0;background:transparent;border:0;border-bottom:1px dotted var(--rule);padding:12px 0}.receipt .improve-summary{border-radius:0;background:#edf0e7;border:1px solid #c9cec1}.receipt .compare-grid>div{border-radius:0;background:#fffdf5}
+.receipt .barcode{width:68%;height:32px}.receipt .receipt-end{font-family:monospace;font-size:10px;color:#686d62}.receipt>.sub:last-of-type{font-size:12px;color:#686d62}
+@media(max-width:360px){main{padding-inline:12px}form{padding:14px}.receipt{padding-inline:13px}.receipt .health>section h3{font-size:17px}}
+</style><style>.printer-head{display:flex;align-items:center;justify-content:space-between;gap:8px}</style><style>.region-control{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;margin:0 0 14px;background:#f7f6ef;border:1px solid #bfc3b6;border-radius:12px;color:#263e31}.region-control label{display:flex;align-items:center;gap:7px;font-size:14px;font-weight:700;line-height:1.35;flex:0 1 auto}.region-control label svg{width:20px;height:20px;flex:none}.region-select{position:relative;min-width:0;flex:0 1 235px}.region-select select{appearance:none;-webkit-appearance:none;width:100%;min-height:46px;padding:10px 34px 10px 12px;border:1px solid #9da99b;border-radius:8px;background:#fff;color:#20382b;box-shadow:none;font:600 16px/1.35 system-ui,sans-serif;cursor:pointer;text-overflow:ellipsis}.region-select>svg{position:absolute;right:10px;top:50%;transform:translateY(-50%);width:17px;height:17px;pointer-events:none;color:#304d3b}.region-select select:focus-visible{outline:3px solid #477b58;outline-offset:2px}@media(max-width:420px){.region-control{display:grid;grid-template-columns:minmax(0,1fr);gap:7px;padding:10px 12px}.region-select{width:100%}.region-control label{font-size:13px}}@media print{.region-control{display:none}}</style><style id="premium-v50">/* V50: editorial life report, warm ivory and deep forest. */
+:root{--ink:#242e28;--muted:#687069;--paper:#fffdf7;--accent:#34594b;--rule:#d8d8cc;--cream:#f4f1eb;--gold:#bca477;--mono:ui-monospace,SFMono-Regular,Consolas,monospace;--serif:Georgia,'Times New Roman',serif}
+html{scroll-behavior:smooth}body{background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.5;letter-spacing:-.015em}main{max-width:720px;padding:24px 24px 48px;margin:auto}.region-control{border:0;background:transparent;margin:0 0 14px;padding:0;display:flex;justify-content:space-between;gap:12px;border-radius:0}.region-control label{font-size:12px;color:var(--muted);font-weight:600}.region-select{flex:0 1 228px}.region-select select{border:1px solid #d2d4c9;background:#faf9f5;border-radius:7px;font-size:14px;min-height:44px;box-shadow:none;color:#38443b}.intro{position:relative;background:#223c32;color:#f9f4e8;border:1px solid #223c32;border-radius:15px;padding:32px 34px 25px;box-shadow:none;margin:0 0 24px;overflow:hidden}.intro:before{content:'';position:absolute;inset:8px;border:1px solid #a4ad9233;border-radius:10px;pointer-events:none}.hero-kicker,.hero-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;font:10px/1.5 var(--mono);letter-spacing:.12em;color:#c5c9b5}.intro h1{font:400 clamp(54px,11vw,87px)/.92 var(--serif);letter-spacing:-.065em;margin:30px 0 23px;color:#faf5e7}.brand-period{color:#c3ad7e}.intro .hero-sub{font-size:18px;font-weight:650;color:#f3eedf;letter-spacing:-.035em;margin:0 0 7px}.intro p{font-size:14px;line-height:1.65;color:#ccd4c5;margin:0 0 24px;max-width:440px}.hero-foot{border-top:1px solid #a4ad9250;padding-top:15px}.ad-space{display:grid;gap:8px;text-align:center;margin:22px 0 28px;min-width:0}.ad-label{font:10px/1.3 var(--mono);letter-spacing:.15em;color:#777b72}.ad-body{display:grid;place-items:center;min-height:92px;border:1px dashed #d0cec4;border-radius:9px;background:#eae7df;min-width:0;overflow:hidden}.ad-placeholder{font-size:12px;color:#7a7d72}.ad-space.is-live .ad-body{display:block;background:transparent;border:0;min-height:100px}.ad-space.is-live .ad-placeholder{display:none}.ad-space ins{display:block;width:100%}.ad-bottom{margin:42px 0 32px}.site-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid #d6d5ca;padding:17px 0 0;color:#6e756a;font:10px/1.4 var(--mono);letter-spacing:.1em}.site-footer strong{font:700 14px var(--serif);letter-spacing:-.03em;color:#34483b}
+form#f{display:grid;gap:16px;background:#fffdf9;border:1px solid #deddd3;border-radius:15px;padding:26px;box-shadow:0 6px 24px #293b3010;margin:0}.screen.form-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 0 12px;background:transparent;border:0;box-shadow:none;border-bottom:1px solid #deddd3;border-radius:0;letter-spacing:0;color:var(--ink);font:inherit}.form-top small,.form-section-title small{font:600 10px var(--mono);color:#7c806f;letter-spacing:.12em;margin:0 0 5px;display:block}.form-top h2,.form-section-title h2{font-size:21px;line-height:1.3;margin:0;color:#273b30;letter-spacing:-.04em}.form-top #display{font-size:11px;color:#34594b;background:#edf0e6;padding:7px 10px;border-radius:5px;white-space:nowrap}.form-section-title{padding-top:18px;border-top:1px solid #deddd3;margin-top:6px}.default-notice{margin:0;color:#6c7167;font-size:12px;line-height:1.55}.input-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.input-grid>label{min-width:0;align-content:end}.input-grid>label:has(#sex){grid-column:1/-1}form label{font-size:13px;font-weight:650;line-height:1.45;gap:7px;color:#354037}form input,form select{min-width:0;min-height:47px;padding:11px 12px;background:#faf9f5;color:#26382e;border:1px solid #d4d6cc;border-radius:7px;font-size:16px;box-shadow:none;line-height:1.4}form input:hover,form select:hover{border-color:#829988}form input:focus,form select:focus{border-color:#34594b;outline:2px solid #a8beaa;outline-offset:1px}form .note{font-size:12px;color:#6c7167;margin:-8px 0 0}button{border-radius:8px;box-shadow:none;background:#34594b;color:#fffdf5;min-height:44px;transition:background .15s,transform .15s;letter-spacing:0;font-weight:650}button:active{box-shadow:none;transform:translateY(1px)}button:hover{background:#284c3e}button:disabled{opacity:.55;cursor:wait}form .primary-cta{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:54px;font-size:16px;background:#263f34;padding:14px 18px}form .primary-cta span:last-child{font-size:22px;line-height:1}.drinkbox{padding:14px;border:1px solid #ddded3;border-radius:10px;gap:10px;background:#faf9f5}.drinkbox legend{padding:0 5px;font-size:13px;color:#354037;font-weight:650}.drinkchoices{margin:0 0 4px;gap:6px}.drinkchoices button{min-height:44px;padding:8px 4px;font-size:13px;background:#f0f0e8;color:#3b4940;box-shadow:none;border:1px solid #d6dacd;border-radius:6px}.drinkchoices button[aria-pressed=true]{background:#34594b;color:#fff;border-color:#34594b;box-shadow:none}.drinkbox .screen{border:0;background:#e8ede3;color:#34594b;padding:10px 12px;box-shadow:none;font:650 16px var(--mono);border-radius:6px;letter-spacing:0}.drinkbox .screen small{color:#57685b;font:12px system-ui;margin:0 0 5px}.drinkbox #drinkdetail{display:grid;gap:12px}.stepper{gap:6px}.stepper button{width:42px;padding:8px}.stepper strong{font-size:12px}.printer{background:#263e34;border:0;box-shadow:none;color:#f4f0e5;padding:18px 20px 10px;margin:30px 0 0;border-radius:12px 12px 3px 3px;font:11px var(--mono);letter-spacing:.12em}.printer .slot{background:#182a22;height:7px;box-shadow:none;margin-top:10px}.paperwrap{padding:0 9px 18px;filter:drop-shadow(0 7px 9px #292b2519)}.receipt{--paper:#fffdf7;background:var(--paper);color:#29352d;padding:34px clamp(18px,5vw,40px) 38px}.receipt h2{font:400 clamp(30px,7vw,46px)/1.15 var(--serif);letter-spacing:-.045em;color:#263e34}.receipt>.sub{font-size:12px;color:#626a5e;line-height:1.55;margin:12px 0 20px}.receipt .receipt-meta{font:10px var(--mono);letter-spacing:.12em;border-color:#a5aa9d;color:#6d7368;padding:12px 0}.receipt .health>section{padding:24px 0;border-color:#b8bbaf}.receipt .health>section .report-tag{font:600 11px var(--mono);letter-spacing:.13em;color:#748075;margin-bottom:8px}.receipt .health>section h3{font-size:21px;color:#293e32;letter-spacing:-.04em;margin:0 0 16px}.receipt .hero-result{background:#edf0e7;border:1px solid #d5ddcf;border-radius:8px;padding:22px 10px;color:#2a4b3c}.receipt .hero-result #livedhours,.receipt .hero-result #lifeage{font-family:var(--serif);font-size:clamp(31px,8vw,51px);font-weight:400;letter-spacing:-.04em;line-height:1.15;color:#294c3c}.receipt .hero-result small{font-size:12px;color:#536457}.receipt .habit-grid{border-color:#d4d7cb}.receipt .habit-card{padding:13px 10px;border-color:#d4d7cb;grid-template-rows:auto auto auto;min-width:0}.receipt .habit-card strong,.receipt .smoking-cost strong{font:650 clamp(17px,4vw,23px)/1.3 system-ui;letter-spacing:-.03em;color:#2d4c3c;overflow-wrap:anywhere}.receipt .habit-card small{color:#686e64;font-size:12px}.receipt .line{border-color:#d7d8cc;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);padding:9px 0}.receipt .line strong{font:650 14px/1.45 system-ui;overflow-wrap:anywhere}.receipt .target-card{background:#f0f2ea;border:1px solid #d6dece;border-radius:8px;padding:16px}.receipt .ring{background:conic-gradient(#34594b 0 var(--pct),#d9ddd2 var(--pct) 100%)}.receipt .ring:before{background:#f0f2ea}.receipt .ring span{color:#34594b}.receipt .survival-track{background:#e0e4d9;border:0;border-radius:4px;height:10px}.receipt .survival-track div{background:linear-gradient(90deg,#34594b,#6b8977);border-radius:4px}.receipt .improve-card{background:#f0f2ea;border-radius:6px;border-left:3px solid #66816c}.receipt .improve-summary{border-radius:8px;background:#ebefe5}.receipt .compare-grid>div{border-radius:6px}.receipt .barcode{height:32px;width:64%;margin-top:19px;opacity:.85}.receipt .receipt-disclaimer{font-size:11px;color:#687065;text-align:center;line-height:1.6;margin:20px 0 0}.receipt .receipt-end{font:10px var(--mono);letter-spacing:.16em;color:#6b7165}.sources{background:#fffdf9;border:1px solid #deddd3;border-radius:10px;margin:0 0 18px}.sources summary{font-size:14px}.actions{gap:10px;margin:22px 0 0}.actions button{display:flex;justify-content:space-between;align-items:center;gap:5px;padding:13px 16px;min-height:50px;font-size:14px}.actions #share{background:#fffdf9;color:#34594b;border:1px solid #bcc9ba}#newReceipt{margin:12px 0;width:100%}
+#exportPreview{width:min(94vw,620px);max-height:90dvh;border:1px solid #d9d8cc;border-radius:16px;padding:20px;background:#fffdf9;color:#29352d;overflow:auto;box-shadow:0 16px 60px #17271d40}#exportPreview::backdrop{background:#16271eaa}.export-head{display:flex;align-items:center;justify-content:space-between;gap:12px}.export-head small{font:10px var(--mono);letter-spacing:.15em;color:#747d70}.export-head h2{font-size:21px;margin:4px 0 0}.export-head #exportClose{background:#eceee5;color:#34594b;width:44px;height:44px;padding:0;font-size:26px}.export-help{font-size:13px;margin:10px 0 15px;color:#687065}.export-formats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-bottom:14px}.export-formats button{min-height:61px;display:grid;align-content:center;gap:4px;text-align:center;background:#f0f1ea;color:#34594b;border:1px solid #d4dbcf;padding:8px 3px;border-radius:7px;font-size:12px}.export-formats button[aria-pressed=true]{background:#34594b;color:#fffdf5;border-color:#34594b}.export-formats small{font:10px/1.4 var(--mono);white-space:normal}.export-stage{background:#e9e5dc;border-radius:8px;min-height:150px;max-height:48dvh;overflow:auto;display:grid;justify-items:center;align-items:start;padding:10px}.export-stage img{display:block;width:auto;max-width:100%;height:auto;object-fit:contain}.export-stage img:not([src]){display:none}.export-stage[data-format=feed] img,.export-stage[data-format=story] img{max-height:44dvh;max-width:100%}#exportDownload{width:100%;margin-top:14px;display:flex;justify-content:space-between;align-items:center;padding:13px 16px}.export-stage[aria-busy=true]{opacity:.55}
+@media(max-width:520px){main{padding:15px 14px 36px}.intro{padding:26px 23px 22px}.intro h1{margin:25px 0 19px}.intro .hero-sub{font-size:16px}.intro p{font-size:13px}.region-control{gap:8px}.region-control label{font-size:11px;white-space:nowrap}.region-select{flex-basis:190px}.region-select select{font-size:13px;padding-left:8px}.ad-space{margin:18px 0 23px}.ad-body{min-height:78px}.ad-bottom{margin:34px 0 26px}form#f{padding:18px;gap:14px}.input-grid{gap:12px}.form-top h2,.form-section-title h2{font-size:19px}.receipt{padding:28px 20px 34px}.receipt .health>section h3{font-size:19px}.receipt .hero-result{padding:17px 8px}.receipt .habit-card small{font-size:11px}.receipt .habit-card strong,.receipt .smoking-cost strong{font-size:17px}.receipt .line strong{font-size:13px}.actions button{padding:12px;font-size:13px}#exportPreview{padding:15px}.export-formats button{font-size:11px}.export-formats small{font-size:9px}}
+@media(max-width:360px){main{padding-inline:10px}.region-control{display:grid;grid-template-columns:1fr;gap:5px}.region-select{width:100%}.intro{padding:22px 19px}.intro h1{font-size:54px}.hero-kicker,.hero-foot{font-size:9px;letter-spacing:.05em}form#f{padding:15px}.input-grid{grid-template-columns:1fr;gap:12px}.paperwrap{padding-inline:5px}.receipt{padding:24px 14px 31px}.receipt .habit-card.smoking-card{grid-template-columns:1fr;grid-template-rows:auto;gap:5px}.receipt .smoking-card>small,.receipt .smoking-card>strong{grid-column:1}.receipt .smoking-cost{grid-column:1;grid-row:auto;border-left:0;border-top:1px dashed #d4d7cb;padding-top:9px;margin-top:4px}.receipt .habit-card strong,.receipt .smoking-cost strong{font-size:16px}.receipt .line span,.receipt .line strong{font-size:12px}.receipt .target-card{padding:10px;gap:8px}.receipt .ring{width:68px}.export-formats{gap:4px}.export-formats button{font-size:10px}}@media print{body{background:#fff}.ad-space,.site-footer,.region-control,.intro,form,.actions,.printer,#exportPreview,#newReceipt{display:none!important}main{padding:0;max-width:100%}.paperwrap{filter:none;padding:0}.receipt{clip-path:none;box-shadow:none;background:#fffdf7;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+</style><style>.ad-space:not(.is-live){display:none!important}.site-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin:16px 0 0;font-size:12px}.site-nav a{color:inherit;text-decoration:underline;text-underline-offset:3px}.site-explainer{margin:22px 0;padding:20px;background:#fffdf6;border:1px solid #d9d5ca;border-radius:12px}.site-explainer h2{font-size:18px;margin:0 0 10px}.site-explainer p{font-size:13px;margin:8px 0;line-height:1.7}.site-explainer a{color:#285a43;font-weight:700}.site-footer{flex-wrap:wrap}.site-nav{width:100%}@media print{.site-explainer,.site-footer,.ad-space{display:none!important}}</style></head><body><main><div class="region-control"><label for="language"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span>언어 및 지역</span></label><div class="region-select"><select id="language" aria-label="언어 및 지역"><option value="ko">한국어 · 대한민국</option><option value="en">English · United States</option><option value="ja">日本語 · 日本</option><option value="zh">简体中文 · 中国</option></select><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div></div><header class="intro"><div class="hero-kicker"><span>THE PERSONAL EDITION</span><span>VOL. 01</span></div><h1>LIFE<br>RECEIPT<span class="brand-period">.</span></h1><p class="hero-sub">나의 시간, 한 장의 영수증.</p><p>나이와 일상 습관을 입력하면 지금까지의 시간과 앞으로의 가능성을 확인할 수 있어요.</p><div class="hero-foot"><span>TIME / HABITS / FUTURE</span><span>EST. 2026</span></div></header><aside class="ad-space" data-placement="top" aria-label="광고 영역"><span class="ad-label">ADVERTISEMENT</span><div class="ad-body"><span class="ad-placeholder">광고 준비 중</span></div></aside><form id="f" autocomplete="off"><div class="screen form-top"><div><small>01 / PROFILE</small><h2>기본 정보</h2></div><span id="display" role="status">입력 대기</span></div><div class="input-grid"><label>현재 나이<input id="age" type="number" min="18" max="100" required></label><label>목표 수명 (세)<input id="goal" type="number" min="18" max="100" required></label><label>성별 (생명표 기준)<select id="sex" required><option value="" selected disabled>선택하세요</option><option value="m">남성</option><option value="f">여성</option></select></label></div><div class="form-section-title"><small>02 / DAILY LIFE</small><h2>하루 일과</h2></div><div class="input-grid"><label>수면 (시간/일)<input id="sleep" type="number" min="0" max="24" step="0.5" required></label><label>게임·영상 (시간/일)<input id="play" type="number" min="0" max="24" step="0.5" required></label><label>공부·일 (시간/일)<input id="work" type="number" min="0" max="24" step="0.5" required></label><label>게임·영상 기간 (년)<input id="playyears" type="number" min="0" max="100" step="0.5" required></label><label>공부·일 기간 (년)<input id="workyears" type="number" min="0" max="100" step="0.5" required></label></div><div class="form-section-title"><small>03 / WELLNESS</small><h2>건강 정보</h2></div><label>흡연 상태<select id="smoke" required><option value="" selected disabled>선택하세요</option><option value="never">비흡연</option><option value="former">과거 흡연</option><option value="current">현재 흡연</option></select></label><label id="ciglabel" hidden>하루 담배 개비 (현재 흡연자)<input id="cigs" type="number" min="0" max="200" required></label><label id="pastciglabel" hidden>과거 평균 하루 담배 개비<input id="pastcigs" type="number" min="0" max="200"></label><label id="smokeyearslabel" hidden>흡연 기간 (년)<input id="smokeyears" type="number" min="0" max="100" step="0.5"></label><fieldset class="drinkbox"><legend>평소 음주량</legend><div class="drinkchoices"><button type="button" data-drink="none" aria-pressed="false">안 마셔요</button><button type="button" data-drink="soju" aria-pressed="false">소주</button><button type="button" data-drink="beer" aria-pressed="false">맥주</button></div><div id="drinkdetail" hidden><label>일주일에 몇 번 마시나요?<div class="stepper"><button type="button" data-target="freq" data-step="-1">−</button><input id="freq" type="number" min="1" max="7" required><button type="button" data-target="freq" data-step="1">+</button></div></label><label>한 번에 얼마나 마시나요?<div class="stepper"><button type="button" data-target="qty" data-step="-0.5">−</button><input id="qty" type="number" min="0.5" max="50" step="0.5" required><button type="button" data-target="qty" data-step="0.5">+</button><strong id="unit">병</strong></div></label><small id="drinkbasis"></small></div><div class="screen"><small>주간 순수 알코올</small><span id="alclive">0.0 g / 주</span></div></fieldset><input id="drinkyears" type="hidden" value="0" disabled><label>일주일에 운동하는 시간 (분)<input id="exercise" type="number" min="0" max="10080" required></label><small class="note">걷기, 달리기, 헬스 등 운동 시간을 합쳐 입력하세요.</small><label>운동 기간 (년)<input id="exyears" type="number" min="0" max="100" step="0.5"></label><div class="input-grid"><label>키 (cm)<input id="height" type="number" min="100" max="250" required></label><label>몸무게 (kg)<input id="weight" type="number" min="25" max="350" required></label></div><p id="error" role="alert"></p><button class="primary-cta" type="submit"><span>내 영수증 출력하기</span><span aria-hidden="true">→</span></button></form><div class="printer" id="printer" hidden><div class="printer-head"><span>RECEIPT PRINTER</span></div><div class="slot"></div></div><div class="paperwrap"><section class="receipt" id="receipt" hidden><h2>LIFE RECEIPT</h2><p class="sub" id="subtitle"></p><div class="receipt-meta"><span>LIFE RECORD</span><span>NO. 0001</span></div><div class="health"><section class="past-first"><p class="report-tag">01 / PAST</p><h3>지금까지 살아온 시간</h3><div class="hero-result"><small>살아온 시간</small><span id="livedhours"></span><small id="liveddays"></small></div><h3>생활 기록</h3><div id="habitcards" class="habit-grid"></div><div id="lines"></div></section><section class="report-section future-section"><p class="report-tag">02 / FUTURE</p><h3>앞으로의 시간</h3><div class="hero-result"><small>예상 수명</small><span id="lifeage"></span><small id="lifeleft"></small></div><div class="target-card"><div><small id="targetlabel">목표 나이 생존율</small><strong id="adjusted"></strong><p>현재 나이부터 목표 나이까지</p></div><div class="ring" id="ring" role="img" aria-label="생존율 그래프"><span>생존율</span></div></div></section><section class="report-section"><p class="report-tag">03 / SURVIVAL</p><h3>나이별 생존율</h3><p class="section-note">현재 나이 기준 누적 생존율</p><div id="modelrows"></div></section><section class="report-section"><p class="report-tag">04 / HEALTH</p><h3>건강을 위한 변화</h3><div id="improvements"></div><h4 class="compare-heading">생활 습관 개선 전후</h4><div id="improveSummary" class="improve-summary"></div></section><div hidden id="remaining"></div></div><p class="receipt-disclaimer">예상 수명·생존율은 검증된 개인 예측이 아닌 참고용 추정치입니다.</p><div class="receipt-cta" id="receiptQrBlock" hidden><canvas id="receiptQr" class="receipt-qr" role="img" aria-label="Life Receipt site QR code"></canvas></div><div class="receipt-end">END OF RECEIPT</div><p class="sub">오늘의 기록, 내일의 시작.</p></section></div><details class="sources" id="sources" hidden><summary><span>참고 자료 및 계산 기준<small>참고 자료 7개 · 펼쳐보기</small></span><span class="source-chevron" aria-hidden="true">⌄</span></summary><div class="source-body"><h3>계산 방법</h3><p>이 영수증의 예상 수명과 생존율은 인구 통계 및 생활 습관을 바탕으로 계산한 참고용 추정치입니다.</p><p>게임·영상과 공부·일은 입력한 유지 기간으로 계산합니다. 수면과 식사는 현재 평균을 전체 생애에 적용한 추정치입니다. 운동은 기타 시간에서 제외합니다. 위험 배수의 로그 합에 0.65를 곱하는 보수적 자체 가정을 적용하며, 고령 구간은 지수형 생존 곡선으로 연장하여 동일한 곡선에서 기대수명과 생존율을 계산합니다.</p><p>생존율은 기준 생명표의 생존자 수 비율에 생활 습관별 자체 위험 배수를 적용합니다. 기대수명은 생존 곡선을 적분하여 추정합니다. 위험 배수는 연구에서 직접 검증된 개인별 계수가 아니며, 선택한 지역의 생명표를 적용합니다.</p><p>아래 자료는 위험의 방향과 건강 권고를 참고하기 위한 것이며, 앱의 수명 예측 정확도를 검증하지 않습니다. 110세 생존율은 95~100세 감소 추세를 연장한 추정치입니다.</p><ol><li><a href="https://kosis.kr" target="_blank" rel="noopener noreferrer">기준 생존율 · 한국 2023년 생명표 ↗</a><p>연령·성별 생존율과 기대여명의 기준. 앱은 기존에 내장된 표와 보간값을 사용합니다.</p></li><li><a href="https://doi.org/10.1056/NEJMsa1211128" target="_blank" rel="noopener noreferrer">흡연 · NEJM (2013) ↗</a><p>흡연과 사망 위험, 금연의 장기적 이점 참고.</p></li><li><a href="https://doi.org/10.1016/S0140-6736(18)30134-X" target="_blank" rel="noopener noreferrer">음주 · The Lancet (2018) ↗</a><p>음주량과 사망 위험의 관계 참고.</p></li><li><a href="https://doi.org/10.1136/bjsports-2022-105669" target="_blank" rel="noopener noreferrer">운동 · BJSM (2023) ↗</a><p>신체 활동량과 사망 위험의 관계 참고.</p></li><li><a href="https://doi.org/10.1016/S0140-6736(16)30175-1" target="_blank" rel="noopener noreferrer">BMI · The Lancet (2016) ↗</a><p>BMI와 전체 사망 위험의 관계 참고.</p></li><li><a href="https://doi.org/10.5664/jcsm.4758" target="_blank" rel="noopener noreferrer">수면 · AASM/SRS (2015) ↗</a><p>성인 수면 시간 권고 참고.</p></li><li id="tobacco-source"><a href="https://www.nabo.go.kr/board/file/down.do?fid=33319156" target="_blank" rel="noopener noreferrer">담배 가격 · 2026년 한국 ↗</a><p>2026년 한국 기준 · 20개비 4,500원</p></li></ol></div></details><p id="linkError" role="alert" hidden></p><button id="newReceipt" type="button" hidden>나도 인생 영수증 만들기</button><div class="actions" id="actions" hidden style="display:none"><button id="save" type="button">이미지 저장 <span aria-hidden="true">↓</span></button><button id="share" type="button">공유하기 <span aria-hidden="true">↗</span></button></div><aside class="ad-space ad-bottom" data-placement="bottom" aria-label="광고 영역"><span class="ad-label">ADVERTISEMENT</span><div class="ad-body"><span class="ad-placeholder">광고 준비 중</span></div></aside><section class="site-explainer"><h2>인생 영수증이란?</h2><p>나이와 하루 평균 수면·공부·게임 시간을 바탕으로 지금까지의 삶을 시간 단위로 정리하는 무료 도구입니다. 운동과 흡연·음주 기록도 함께 확인할 수 있습니다.</p><p>수명과 생존율은 생활 습관을 가정한 체험용 추정치이며, 실제 개인의 수명을 예측하거나 질병을 진단하지 않습니다.</p><a href="guide.html">이용 방법 및 계산 기준</a></section><footer class="site-footer"><strong>LIFE RECEIPT.</strong><span>TIME IS YOURS.</span><nav class="site-nav" aria-label="Site information"><a href="guide.html">Guide · 이용 안내</a><a href="privacy.html">Privacy · 개인정보</a></nav></footer></main><dialog id="exportPreview" aria-labelledby="exportTitle"><div class="export-head"><div><small>EXPORT / PNG</small><h2 id="exportTitle">이미지 저장 형식</h2></div><button id="exportClose" type="button" aria-label="닫기">×</button></div><p class="export-help">전체 결과를 한 장에 저장하거나, 인스타그램용 요약 이미지를 만들 수 있어요.</p><div class="export-formats" role="group" aria-label="이미지 저장 형식"><button type="button" data-format="full" aria-pressed="true"><b>전체 영수증</b><small>FULL</small></button><button type="button" data-format="feed" aria-pressed="false"><b>인스타 피드</b><small>4:5 · 1080 × 1350</small></button><button type="button" data-format="story" aria-pressed="false"><b>인스타 스토리</b><small>9:16 · 1080 × 1920</small></button></div><div class="export-stage" aria-busy="false"><img id="exportImage" alt="Life Receipt PNG"></div><button id="exportDownload" type="button" disabled>PNG 저장 <span aria-hidden="true">↓</span></button></dialog><script>/* Embedded QRCode for JavaScript, Kazuhiko Arase, MIT license. */
+const LocalQRCode=(()=>{const modules={"QR8bitByte":function(module,exports,require){
+var QRMode = require('./QRMode');
+
+function QR8bitByte(data) {
+	this.mode = QRMode.MODE_8BIT_BYTE;
+	this.data = data;
+}
+
+QR8bitByte.prototype = {
+
+	getLength : function() {
+		return this.data.length;
+	},
+	
+	write : function(buffer) {
+		for (var i = 0; i < this.data.length; i++) {
+			// not JIS ...
+			buffer.put(this.data.charCodeAt(i), 8);
+		}
+	}
+};
+
+module.exports = QR8bitByte;
+
+},"QRBitBuffer":function(module,exports,require){
+function QRBitBuffer() {
+	this.buffer = [];
+	this.length = 0;
+}
+
+QRBitBuffer.prototype = {
+
+	get : function(index) {
+		var bufIndex = Math.floor(index / 8);
+		return ( (this.buffer[bufIndex] >>> (7 - index % 8) ) & 1) == 1;
+	},
+	
+	put : function(num, length) {
+		for (var i = 0; i < length; i++) {
+			this.putBit( ( (num >>> (length - i - 1) ) & 1) == 1);
+		}
+	},
+	
+	getLengthInBits : function() {
+		return this.length;
+	},
+	
+	putBit : function(bit) {
+	
+		var bufIndex = Math.floor(this.length / 8);
+		if (this.buffer.length <= bufIndex) {
+			this.buffer.push(0);
+		}
+	
+		if (bit) {
+			this.buffer[bufIndex] |= (0x80 >>> (this.length % 8) );
+		}
+	
+		this.length++;
+	}
+};
+
+module.exports = QRBitBuffer;
+
+},"QRErrorCorrectLevel":function(module,exports,require){
+module.exports = {
+	L : 1,
+	M : 0,
+	Q : 3,
+	H : 2
+};
+
+
+},"QRMaskPattern":function(module,exports,require){
+module.exports = {
+	PATTERN000 : 0,
+	PATTERN001 : 1,
+	PATTERN010 : 2,
+	PATTERN011 : 3,
+	PATTERN100 : 4,
+	PATTERN101 : 5,
+	PATTERN110 : 6,
+	PATTERN111 : 7
+};
+
+},"QRMath":function(module,exports,require){
+var QRMath = {
+
+	glog : function(n) {
+	
+		if (n < 1) {
+			throw new Error("glog(" + n + ")");
+		}
+		
+		return QRMath.LOG_TABLE[n];
+	},
+	
+	gexp : function(n) {
+	
+		while (n < 0) {
+			n += 255;
+		}
+	
+		while (n >= 256) {
+			n -= 255;
+		}
+	
+		return QRMath.EXP_TABLE[n];
+	},
+	
+	EXP_TABLE : new Array(256),
+	
+	LOG_TABLE : new Array(256)
+
+};
+	
+for (var i = 0; i < 8; i++) {
+	QRMath.EXP_TABLE[i] = 1 << i;
+}
+for (var i = 8; i < 256; i++) {
+	QRMath.EXP_TABLE[i] = QRMath.EXP_TABLE[i - 4]
+		^ QRMath.EXP_TABLE[i - 5]
+		^ QRMath.EXP_TABLE[i - 6]
+		^ QRMath.EXP_TABLE[i - 8];
+}
+for (var i = 0; i < 255; i++) {
+	QRMath.LOG_TABLE[QRMath.EXP_TABLE[i] ] = i;
+}
+
+module.exports = QRMath;
+
+},"QRMode":function(module,exports,require){
+module.exports = {
+    MODE_NUMBER :       1 << 0,
+    MODE_ALPHA_NUM :    1 << 1,
+    MODE_8BIT_BYTE :    1 << 2,
+    MODE_KANJI :        1 << 3
+};
+
+},"QRPolynomial":function(module,exports,require){
+var QRMath = require('./QRMath');
+
+function QRPolynomial(num, shift) {
+	if (num.length === undefined) {
+		throw new Error(num.length + "/" + shift);
+	}
+
+	var offset = 0;
+
+	while (offset < num.length && num[offset] === 0) {
+		offset++;
+	}
+
+	this.num = new Array(num.length - offset + shift);
+	for (var i = 0; i < num.length - offset; i++) {
+		this.num[i] = num[i + offset];
+	}
+}
+
+QRPolynomial.prototype = {
+
+	get : function(index) {
+		return this.num[index];
+	},
+	
+	getLength : function() {
+		return this.num.length;
+	},
+	
+	multiply : function(e) {
+	
+		var num = new Array(this.getLength() + e.getLength() - 1);
+	
+		for (var i = 0; i < this.getLength(); i++) {
+			for (var j = 0; j < e.getLength(); j++) {
+				num[i + j] ^= QRMath.gexp(QRMath.glog(this.get(i) ) + QRMath.glog(e.get(j) ) );
+			}
+		}
+	
+		return new QRPolynomial(num, 0);
+	},
+	
+	mod : function(e) {
+	
+		if (this.getLength() - e.getLength() < 0) {
+			return this;
+		}
+	
+		var ratio = QRMath.glog(this.get(0) ) - QRMath.glog(e.get(0) );
+	
+		var num = new Array(this.getLength() );
+		
+		for (var i = 0; i < this.getLength(); i++) {
+			num[i] = this.get(i);
+		}
+		
+		for (var x = 0; x < e.getLength(); x++) {
+			num[x] ^= QRMath.gexp(QRMath.glog(e.get(x) ) + ratio);
+		}
+	
+		// recursive call
+		return new QRPolynomial(num, 0).mod(e);
+	}
+};
+
+module.exports = QRPolynomial;
+
+},"QRRSBlock":function(module,exports,require){
+var QRErrorCorrectLevel = require('./QRErrorCorrectLevel');
+
+function QRRSBlock(totalCount, dataCount) {
+	this.totalCount = totalCount;
+	this.dataCount  = dataCount;
+}
+
+QRRSBlock.RS_BLOCK_TABLE = [
+
+	// L
+	// M
+	// Q
+	// H
+
+	// 1
+	[1, 26, 19],
+	[1, 26, 16],
+	[1, 26, 13],
+	[1, 26, 9],
+	
+	// 2
+	[1, 44, 34],
+	[1, 44, 28],
+	[1, 44, 22],
+	[1, 44, 16],
+
+	// 3
+	[1, 70, 55],
+	[1, 70, 44],
+	[2, 35, 17],
+	[2, 35, 13],
+
+	// 4		
+	[1, 100, 80],
+	[2, 50, 32],
+	[2, 50, 24],
+	[4, 25, 9],
+	
+	// 5
+	[1, 134, 108],
+	[2, 67, 43],
+	[2, 33, 15, 2, 34, 16],
+	[2, 33, 11, 2, 34, 12],
+	
+	// 6
+	[2, 86, 68],
+	[4, 43, 27],
+	[4, 43, 19],
+	[4, 43, 15],
+	
+	// 7		
+	[2, 98, 78],
+	[4, 49, 31],
+	[2, 32, 14, 4, 33, 15],
+	[4, 39, 13, 1, 40, 14],
+	
+	// 8
+	[2, 121, 97],
+	[2, 60, 38, 2, 61, 39],
+	[4, 40, 18, 2, 41, 19],
+	[4, 40, 14, 2, 41, 15],
+	
+	// 9
+	[2, 146, 116],
+	[3, 58, 36, 2, 59, 37],
+	[4, 36, 16, 4, 37, 17],
+	[4, 36, 12, 4, 37, 13],
+	
+	// 10		
+	[2, 86, 68, 2, 87, 69],
+	[4, 69, 43, 1, 70, 44],
+	[6, 43, 19, 2, 44, 20],
+	[6, 43, 15, 2, 44, 16],
+
+	// 11
+	[4, 101, 81],
+	[1, 80, 50, 4, 81, 51],
+	[4, 50, 22, 4, 51, 23],
+	[3, 36, 12, 8, 37, 13],
+
+	// 12
+	[2, 116, 92, 2, 117, 93],
+	[6, 58, 36, 2, 59, 37],
+	[4, 46, 20, 6, 47, 21],
+	[7, 42, 14, 4, 43, 15],
+
+	// 13
+	[4, 133, 107],
+	[8, 59, 37, 1, 60, 38],
+	[8, 44, 20, 4, 45, 21],
+	[12, 33, 11, 4, 34, 12],
+
+	// 14
+	[3, 145, 115, 1, 146, 116],
+	[4, 64, 40, 5, 65, 41],
+	[11, 36, 16, 5, 37, 17],
+	[11, 36, 12, 5, 37, 13],
+
+	// 15
+	[5, 109, 87, 1, 110, 88],
+	[5, 65, 41, 5, 66, 42],
+	[5, 54, 24, 7, 55, 25],
+	[11, 36, 12],
+
+	// 16
+	[5, 122, 98, 1, 123, 99],
+	[7, 73, 45, 3, 74, 46],
+	[15, 43, 19, 2, 44, 20],
+	[3, 45, 15, 13, 46, 16],
+
+	// 17
+	[1, 135, 107, 5, 136, 108],
+	[10, 74, 46, 1, 75, 47],
+	[1, 50, 22, 15, 51, 23],
+	[2, 42, 14, 17, 43, 15],
+
+	// 18
+	[5, 150, 120, 1, 151, 121],
+	[9, 69, 43, 4, 70, 44],
+	[17, 50, 22, 1, 51, 23],
+	[2, 42, 14, 19, 43, 15],
+
+	// 19
+	[3, 141, 113, 4, 142, 114],
+	[3, 70, 44, 11, 71, 45],
+	[17, 47, 21, 4, 48, 22],
+	[9, 39, 13, 16, 40, 14],
+
+	// 20
+	[3, 135, 107, 5, 136, 108],
+	[3, 67, 41, 13, 68, 42],
+	[15, 54, 24, 5, 55, 25],
+	[15, 43, 15, 10, 44, 16],
+
+	// 21
+	[4, 144, 116, 4, 145, 117],
+	[17, 68, 42],
+	[17, 50, 22, 6, 51, 23],
+	[19, 46, 16, 6, 47, 17],
+
+	// 22
+	[2, 139, 111, 7, 140, 112],
+	[17, 74, 46],
+	[7, 54, 24, 16, 55, 25],
+	[34, 37, 13],
+
+	// 23
+	[4, 151, 121, 5, 152, 122],
+	[4, 75, 47, 14, 76, 48],
+	[11, 54, 24, 14, 55, 25],
+	[16, 45, 15, 14, 46, 16],
+
+	// 24
+	[6, 147, 117, 4, 148, 118],
+	[6, 73, 45, 14, 74, 46],
+	[11, 54, 24, 16, 55, 25],
+	[30, 46, 16, 2, 47, 17],
+
+	// 25
+	[8, 132, 106, 4, 133, 107],
+	[8, 75, 47, 13, 76, 48],
+	[7, 54, 24, 22, 55, 25],
+	[22, 45, 15, 13, 46, 16],
+
+	// 26
+	[10, 142, 114, 2, 143, 115],
+	[19, 74, 46, 4, 75, 47],
+	[28, 50, 22, 6, 51, 23],
+	[33, 46, 16, 4, 47, 17],
+
+	// 27
+	[8, 152, 122, 4, 153, 123],
+	[22, 73, 45, 3, 74, 46],
+	[8, 53, 23, 26, 54, 24],
+	[12, 45, 15, 28, 46, 16],
+
+	// 28
+	[3, 147, 117, 10, 148, 118],
+	[3, 73, 45, 23, 74, 46],
+	[4, 54, 24, 31, 55, 25],
+	[11, 45, 15, 31, 46, 16],
+
+	// 29
+	[7, 146, 116, 7, 147, 117],
+	[21, 73, 45, 7, 74, 46],
+	[1, 53, 23, 37, 54, 24],
+	[19, 45, 15, 26, 46, 16],
+
+	// 30
+	[5, 145, 115, 10, 146, 116],
+	[19, 75, 47, 10, 76, 48],
+	[15, 54, 24, 25, 55, 25],
+	[23, 45, 15, 25, 46, 16],
+
+	// 31
+	[13, 145, 115, 3, 146, 116],
+	[2, 74, 46, 29, 75, 47],
+	[42, 54, 24, 1, 55, 25],
+	[23, 45, 15, 28, 46, 16],
+
+	// 32
+	[17, 145, 115],
+	[10, 74, 46, 23, 75, 47],
+	[10, 54, 24, 35, 55, 25],
+	[19, 45, 15, 35, 46, 16],
+
+	// 33
+	[17, 145, 115, 1, 146, 116],
+	[14, 74, 46, 21, 75, 47],
+	[29, 54, 24, 19, 55, 25],
+	[11, 45, 15, 46, 46, 16],
+
+	// 34
+	[13, 145, 115, 6, 146, 116],
+	[14, 74, 46, 23, 75, 47],
+	[44, 54, 24, 7, 55, 25],
+	[59, 46, 16, 1, 47, 17],
+
+	// 35
+	[12, 151, 121, 7, 152, 122],
+	[12, 75, 47, 26, 76, 48],
+	[39, 54, 24, 14, 55, 25],
+	[22, 45, 15, 41, 46, 16],
+
+	// 36
+	[6, 151, 121, 14, 152, 122],
+	[6, 75, 47, 34, 76, 48],
+	[46, 54, 24, 10, 55, 25],
+	[2, 45, 15, 64, 46, 16],
+
+	// 37
+	[17, 152, 122, 4, 153, 123],
+	[29, 74, 46, 14, 75, 47],
+	[49, 54, 24, 10, 55, 25],
+	[24, 45, 15, 46, 46, 16],
+
+	// 38
+	[4, 152, 122, 18, 153, 123],
+	[13, 74, 46, 32, 75, 47],
+	[48, 54, 24, 14, 55, 25],
+	[42, 45, 15, 32, 46, 16],
+
+	// 39
+	[20, 147, 117, 4, 148, 118],
+	[40, 75, 47, 7, 76, 48],
+	[43, 54, 24, 22, 55, 25],
+	[10, 45, 15, 67, 46, 16],
+
+	// 40
+	[19, 148, 118, 6, 149, 119],
+	[18, 75, 47, 31, 76, 48],
+	[34, 54, 24, 34, 55, 25],
+	[20, 45, 15, 61, 46, 16]
+];
+
+QRRSBlock.getRSBlocks = function(typeNumber, errorCorrectLevel) {
+	
+	var rsBlock = QRRSBlock.getRsBlockTable(typeNumber, errorCorrectLevel);
+	
+	if (rsBlock === undefined) {
+		throw new Error("bad rs block @ typeNumber:" + typeNumber + "/errorCorrectLevel:" + errorCorrectLevel);
+	}
+
+	var length = rsBlock.length / 3;
+	
+	var list = [];
+	
+	for (var i = 0; i < length; i++) {
+
+		var count = rsBlock[i * 3 + 0];
+		var totalCount = rsBlock[i * 3 + 1];
+		var dataCount  = rsBlock[i * 3 + 2];
+
+		for (var j = 0; j < count; j++) {
+			list.push(new QRRSBlock(totalCount, dataCount) );	
+		}
+	}
+	
+	return list;
+};
+
+QRRSBlock.getRsBlockTable = function(typeNumber, errorCorrectLevel) {
+
+	switch(errorCorrectLevel) {
+	case QRErrorCorrectLevel.L :
+		return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 0];
+	case QRErrorCorrectLevel.M :
+		return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 1];
+	case QRErrorCorrectLevel.Q :
+		return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 2];
+	case QRErrorCorrectLevel.H :
+		return QRRSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 3];
+	default :
+		return undefined;
+	}
+};
+
+module.exports = QRRSBlock;
+
+},"QRUtil":function(module,exports,require){
+var QRMode = require('./QRMode');
+var QRPolynomial = require('./QRPolynomial');
+var QRMath = require('./QRMath');
+var QRMaskPattern = require('./QRMaskPattern');
+
+var QRUtil = {
+
+    PATTERN_POSITION_TABLE : [
+        [],
+        [6, 18],
+        [6, 22],
+        [6, 26],
+        [6, 30],
+        [6, 34],
+        [6, 22, 38],
+        [6, 24, 42],
+        [6, 26, 46],
+        [6, 28, 50],
+        [6, 30, 54],        
+        [6, 32, 58],
+        [6, 34, 62],
+        [6, 26, 46, 66],
+        [6, 26, 48, 70],
+        [6, 26, 50, 74],
+        [6, 30, 54, 78],
+        [6, 30, 56, 82],
+        [6, 30, 58, 86],
+        [6, 34, 62, 90],
+        [6, 28, 50, 72, 94],
+        [6, 26, 50, 74, 98],
+        [6, 30, 54, 78, 102],
+        [6, 28, 54, 80, 106],
+        [6, 32, 58, 84, 110],
+        [6, 30, 58, 86, 114],
+        [6, 34, 62, 90, 118],
+        [6, 26, 50, 74, 98, 122],
+        [6, 30, 54, 78, 102, 126],
+        [6, 26, 52, 78, 104, 130],
+        [6, 30, 56, 82, 108, 134],
+        [6, 34, 60, 86, 112, 138],
+        [6, 30, 58, 86, 114, 142],
+        [6, 34, 62, 90, 118, 146],
+        [6, 30, 54, 78, 102, 126, 150],
+        [6, 24, 50, 76, 102, 128, 154],
+        [6, 28, 54, 80, 106, 132, 158],
+        [6, 32, 58, 84, 110, 136, 162],
+        [6, 26, 54, 82, 110, 138, 166],
+        [6, 30, 58, 86, 114, 142, 170]
+    ],
+
+    G15 : (1 << 10) | (1 << 8) | (1 << 5) | (1 << 4) | (1 << 2) | (1 << 1) | (1 << 0),
+    G18 : (1 << 12) | (1 << 11) | (1 << 10) | (1 << 9) | (1 << 8) | (1 << 5) | (1 << 2) | (1 << 0),
+    G15_MASK : (1 << 14) | (1 << 12) | (1 << 10)    | (1 << 4) | (1 << 1),
+
+    getBCHTypeInfo : function(data) {
+        var d = data << 10;
+        while (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G15) >= 0) {
+            d ^= (QRUtil.G15 << (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G15) ) );    
+        }
+        return ( (data << 10) | d) ^ QRUtil.G15_MASK;
+    },
+
+    getBCHTypeNumber : function(data) {
+        var d = data << 12;
+        while (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G18) >= 0) {
+            d ^= (QRUtil.G18 << (QRUtil.getBCHDigit(d) - QRUtil.getBCHDigit(QRUtil.G18) ) );    
+        }
+        return (data << 12) | d;
+    },
+
+    getBCHDigit : function(data) {
+
+        var digit = 0;
+
+        while (data !== 0) {
+            digit++;
+            data >>>= 1;
+        }
+
+        return digit;
+    },
+
+    getPatternPosition : function(typeNumber) {
+        return QRUtil.PATTERN_POSITION_TABLE[typeNumber - 1];
+    },
+
+    getMask : function(maskPattern, i, j) {
+        
+        switch (maskPattern) {
+            
+        case QRMaskPattern.PATTERN000 : return (i + j) % 2 === 0;
+        case QRMaskPattern.PATTERN001 : return i % 2 === 0;
+        case QRMaskPattern.PATTERN010 : return j % 3 === 0;
+        case QRMaskPattern.PATTERN011 : return (i + j) % 3 === 0;
+        case QRMaskPattern.PATTERN100 : return (Math.floor(i / 2) + Math.floor(j / 3) ) % 2 === 0;
+        case QRMaskPattern.PATTERN101 : return (i * j) % 2 + (i * j) % 3 === 0;
+        case QRMaskPattern.PATTERN110 : return ( (i * j) % 2 + (i * j) % 3) % 2 === 0;
+        case QRMaskPattern.PATTERN111 : return ( (i * j) % 3 + (i + j) % 2) % 2 === 0;
+
+        default :
+            throw new Error("bad maskPattern:" + maskPattern);
+        }
+    },
+
+    getErrorCorrectPolynomial : function(errorCorrectLength) {
+
+        var a = new QRPolynomial([1], 0);
+
+        for (var i = 0; i < errorCorrectLength; i++) {
+            a = a.multiply(new QRPolynomial([1, QRMath.gexp(i)], 0) );
+        }
+
+        return a;
+    },
+
+    getLengthInBits : function(mode, type) {
+
+        if (1 <= type && type < 10) {
+
+            // 1 - 9
+
+            switch(mode) {
+            case QRMode.MODE_NUMBER     : return 10;
+            case QRMode.MODE_ALPHA_NUM  : return 9;
+            case QRMode.MODE_8BIT_BYTE  : return 8;
+            case QRMode.MODE_KANJI      : return 8;
+            default :
+                throw new Error("mode:" + mode);
+            }
+
+        } else if (type < 27) {
+
+            // 10 - 26
+
+            switch(mode) {
+            case QRMode.MODE_NUMBER     : return 12;
+            case QRMode.MODE_ALPHA_NUM  : return 11;
+            case QRMode.MODE_8BIT_BYTE  : return 16;
+            case QRMode.MODE_KANJI      : return 10;
+            default :
+                throw new Error("mode:" + mode);
+            }
+
+        } else if (type < 41) {
+
+            // 27 - 40
+
+            switch(mode) {
+            case QRMode.MODE_NUMBER     : return 14;
+            case QRMode.MODE_ALPHA_NUM  : return 13;
+            case QRMode.MODE_8BIT_BYTE  : return 16;
+            case QRMode.MODE_KANJI      : return 12;
+            default :
+                throw new Error("mode:" + mode);
+            }
+
+        } else {
+            throw new Error("type:" + type);
+        }
+    },
+
+    getLostPoint : function(qrCode) {
+        
+        var moduleCount = qrCode.getModuleCount();
+        var lostPoint = 0;
+        var row = 0; 
+        var col = 0;
+
+        
+        // LEVEL1
+        
+        for (row = 0; row < moduleCount; row++) {
+
+            for (col = 0; col < moduleCount; col++) {
+
+                var sameCount = 0;
+                var dark = qrCode.isDark(row, col);
+
+                for (var r = -1; r <= 1; r++) {
+
+                    if (row + r < 0 || moduleCount <= row + r) {
+                        continue;
+                    }
+
+                    for (var c = -1; c <= 1; c++) {
+
+                        if (col + c < 0 || moduleCount <= col + c) {
+                            continue;
+                        }
+
+                        if (r === 0 && c === 0) {
+                            continue;
+                        }
+
+                        if (dark === qrCode.isDark(row + r, col + c) ) {
+                            sameCount++;
+                        }
+                    }
+                }
+
+                if (sameCount > 5) {
+                    lostPoint += (3 + sameCount - 5);
+                }
+            }
+        }
+
+        // LEVEL2
+
+        for (row = 0; row < moduleCount - 1; row++) {
+            for (col = 0; col < moduleCount - 1; col++) {
+                var count = 0;
+                if (qrCode.isDark(row,     col    ) ) count++;
+                if (qrCode.isDark(row + 1, col    ) ) count++;
+                if (qrCode.isDark(row,     col + 1) ) count++;
+                if (qrCode.isDark(row + 1, col + 1) ) count++;
+                if (count === 0 || count === 4) {
+                    lostPoint += 3;
+                }
+            }
+        }
+
+        // LEVEL3
+
+        for (row = 0; row < moduleCount; row++) {
+            for (col = 0; col < moduleCount - 6; col++) {
+                if (qrCode.isDark(row, col) && 
+                        !qrCode.isDark(row, col + 1) && 
+                         qrCode.isDark(row, col + 2) && 
+                         qrCode.isDark(row, col + 3) && 
+                         qrCode.isDark(row, col + 4) && 
+                        !qrCode.isDark(row, col + 5) && 
+                         qrCode.isDark(row, col + 6) ) {
+                    lostPoint += 40;
+                }
+            }
+        }
+
+        for (col = 0; col < moduleCount; col++) {
+            for (row = 0; row < moduleCount - 6; row++) {
+                if (qrCode.isDark(row, col) &&
+                        !qrCode.isDark(row + 1, col) &&
+                         qrCode.isDark(row + 2, col) &&
+                         qrCode.isDark(row + 3, col) &&
+                         qrCode.isDark(row + 4, col) &&
+                        !qrCode.isDark(row + 5, col) &&
+                         qrCode.isDark(row + 6, col) ) {
+                    lostPoint += 40;
+                }
+            }
+        }
+
+        // LEVEL4
+        
+        var darkCount = 0;
+
+        for (col = 0; col < moduleCount; col++) {
+            for (row = 0; row < moduleCount; row++) {
+                if (qrCode.isDark(row, col) ) {
+                    darkCount++;
+                }
+            }
+        }
+        
+        var ratio = Math.abs(100 * darkCount / moduleCount / moduleCount - 50) / 5;
+        lostPoint += ratio * 10;
+
+        return lostPoint;       
+    }
+
+};
+
+module.exports = QRUtil;
+
+},"index":function(module,exports,require){
+//---------------------------------------------------------------------
+// QRCode for JavaScript
+//
+// Copyright (c) 2009 Kazuhiko Arase
+//
+// URL: http://www.d-project.com/
+//
+// Licensed under the MIT license:
+//   http://www.opensource.org/licenses/mit-license.php
+//
+// The word "QR Code" is registered trademark of 
+// DENSO WAVE INCORPORATED
+//   http://www.denso-wave.com/qrcode/faqpatent-e.html
+//
+//---------------------------------------------------------------------
+// Modified to work in node for this project (and some refactoring)
+//---------------------------------------------------------------------
+
+var QR8bitByte = require('./QR8bitByte');
+var QRUtil = require('./QRUtil');
+var QRPolynomial = require('./QRPolynomial');
+var QRRSBlock = require('./QRRSBlock');
+var QRBitBuffer = require('./QRBitBuffer');
+
+function QRCode(typeNumber, errorCorrectLevel) {
+	this.typeNumber = typeNumber;
+	this.errorCorrectLevel = errorCorrectLevel;
+	this.modules = null;
+	this.moduleCount = 0;
+	this.dataCache = null;
+	this.dataList = [];
+}
+
+QRCode.prototype = {
+	
+	addData : function(data) {
+		var newData = new QR8bitByte(data);
+		this.dataList.push(newData);
+		this.dataCache = null;
+	},
+	
+	isDark : function(row, col) {
+		if (row < 0 || this.moduleCount <= row || col < 0 || this.moduleCount <= col) {
+			throw new Error(row + "," + col);
+		}
+		return this.modules[row][col];
+	},
+
+	getModuleCount : function() {
+		return this.moduleCount;
+	},
+	
+	make : function() {
+		// Calculate automatically typeNumber if provided is < 1
+		if (this.typeNumber < 1 ){
+			var typeNumber = 1;
+			for (typeNumber = 1; typeNumber < 40; typeNumber++) {
+				var rsBlocks = QRRSBlock.getRSBlocks(typeNumber, this.errorCorrectLevel);
+
+				var buffer = new QRBitBuffer();
+				var totalDataCount = 0;
+				for (var i = 0; i < rsBlocks.length; i++) {
+					totalDataCount += rsBlocks[i].dataCount;
+				}
+
+				for (var x = 0; x < this.dataList.length; x++) {
+					var data = this.dataList[x];
+					buffer.put(data.mode, 4);
+					buffer.put(data.getLength(), QRUtil.getLengthInBits(data.mode, typeNumber) );
+					data.write(buffer);
+				}
+				if (buffer.getLengthInBits() <= totalDataCount * 8)
+					break;
+			}
+			this.typeNumber = typeNumber;
+		}
+		this.makeImpl(false, this.getBestMaskPattern() );
+	},
+	
+	makeImpl : function(test, maskPattern) {
+		
+		this.moduleCount = this.typeNumber * 4 + 17;
+		this.modules = new Array(this.moduleCount);
+		
+		for (var row = 0; row < this.moduleCount; row++) {
+			
+			this.modules[row] = new Array(this.moduleCount);
+			
+			for (var col = 0; col < this.moduleCount; col++) {
+				this.modules[row][col] = null;//(col + row) % 3;
+			}
+		}
+	
+		this.setupPositionProbePattern(0, 0);
+		this.setupPositionProbePattern(this.moduleCount - 7, 0);
+		this.setupPositionProbePattern(0, this.moduleCount - 7);
+		this.setupPositionAdjustPattern();
+		this.setupTimingPattern();
+		this.setupTypeInfo(test, maskPattern);
+		
+		if (this.typeNumber >= 7) {
+			this.setupTypeNumber(test);
+		}
+	
+		if (this.dataCache === null) {
+			this.dataCache = QRCode.createData(this.typeNumber, this.errorCorrectLevel, this.dataList);
+		}
+	
+		this.mapData(this.dataCache, maskPattern);
+	},
+
+	setupPositionProbePattern : function(row, col)  {
+		
+		for (var r = -1; r <= 7; r++) {
+			
+			if (row + r <= -1 || this.moduleCount <= row + r) continue;
+			
+			for (var c = -1; c <= 7; c++) {
+				
+				if (col + c <= -1 || this.moduleCount <= col + c) continue;
+				
+				if ( (0 <= r && r <= 6 && (c === 0 || c === 6) ) || 
+                     (0 <= c && c <= 6 && (r === 0 || r === 6) ) || 
+                     (2 <= r && r <= 4 && 2 <= c && c <= 4) ) {
+					this.modules[row + r][col + c] = true;
+				} else {
+					this.modules[row + r][col + c] = false;
+				}
+			}		
+		}		
+	},
+	
+	getBestMaskPattern : function() {
+	
+		var minLostPoint = 0;
+		var pattern = 0;
+	
+		for (var i = 0; i < 8; i++) {
+			
+			this.makeImpl(true, i);
+	
+			var lostPoint = QRUtil.getLostPoint(this);
+	
+			if (i === 0 || minLostPoint >  lostPoint) {
+				minLostPoint = lostPoint;
+				pattern = i;
+			}
+		}
+	
+		return pattern;
+	},
+	
+	createMovieClip : function(target_mc, instance_name, depth) {
+	
+		var qr_mc = target_mc.createEmptyMovieClip(instance_name, depth);
+		var cs = 1;
+	
+		this.make();
+
+		for (var row = 0; row < this.modules.length; row++) {
+			
+			var y = row * cs;
+			
+			for (var col = 0; col < this.modules[row].length; col++) {
+	
+				var x = col * cs;
+				var dark = this.modules[row][col];
+			
+				if (dark) {
+					qr_mc.beginFill(0, 100);
+					qr_mc.moveTo(x, y);
+					qr_mc.lineTo(x + cs, y);
+					qr_mc.lineTo(x + cs, y + cs);
+					qr_mc.lineTo(x, y + cs);
+					qr_mc.endFill();
+				}
+			}
+		}
+		
+		return qr_mc;
+	},
+
+	setupTimingPattern : function() {
+		
+		for (var r = 8; r < this.moduleCount - 8; r++) {
+			if (this.modules[r][6] !== null) {
+				continue;
+			}
+			this.modules[r][6] = (r % 2 === 0);
+		}
+	
+		for (var c = 8; c < this.moduleCount - 8; c++) {
+			if (this.modules[6][c] !== null) {
+				continue;
+			}
+			this.modules[6][c] = (c % 2 === 0);
+		}
+	},
+	
+	setupPositionAdjustPattern : function() {
+	
+		var pos = QRUtil.getPatternPosition(this.typeNumber);
+		
+		for (var i = 0; i < pos.length; i++) {
+		
+			for (var j = 0; j < pos.length; j++) {
+			
+				var row = pos[i];
+				var col = pos[j];
+				
+				if (this.modules[row][col] !== null) {
+					continue;
+				}
+				
+				for (var r = -2; r <= 2; r++) {
+				
+					for (var c = -2; c <= 2; c++) {
+					
+						if (Math.abs(r) === 2 || 
+                            Math.abs(c) === 2 ||
+                            (r === 0 && c === 0) ) {
+							this.modules[row + r][col + c] = true;
+						} else {
+							this.modules[row + r][col + c] = false;
+						}
+					}
+				}
+			}
+		}
+	},
+	
+	setupTypeNumber : function(test) {
+	
+		var bits = QRUtil.getBCHTypeNumber(this.typeNumber);
+        var mod;
+	
+		for (var i = 0; i < 18; i++) {
+			mod = (!test && ( (bits >> i) & 1) === 1);
+			this.modules[Math.floor(i / 3)][i % 3 + this.moduleCount - 8 - 3] = mod;
+		}
+	
+		for (var x = 0; x < 18; x++) {
+			mod = (!test && ( (bits >> x) & 1) === 1);
+			this.modules[x % 3 + this.moduleCount - 8 - 3][Math.floor(x / 3)] = mod;
+		}
+	},
+	
+	setupTypeInfo : function(test, maskPattern) {
+	
+		var data = (this.errorCorrectLevel << 3) | maskPattern;
+		var bits = QRUtil.getBCHTypeInfo(data);
+        var mod;
+	
+		// vertical		
+		for (var v = 0; v < 15; v++) {
+	
+			mod = (!test && ( (bits >> v) & 1) === 1);
+	
+			if (v < 6) {
+				this.modules[v][8] = mod;
+			} else if (v < 8) {
+				this.modules[v + 1][8] = mod;
+			} else {
+				this.modules[this.moduleCount - 15 + v][8] = mod;
+			}
+		}
+	
+		// horizontal
+		for (var h = 0; h < 15; h++) {
+	
+			mod = (!test && ( (bits >> h) & 1) === 1);
+			
+			if (h < 8) {
+				this.modules[8][this.moduleCount - h - 1] = mod;
+			} else if (h < 9) {
+				this.modules[8][15 - h - 1 + 1] = mod;
+			} else {
+				this.modules[8][15 - h - 1] = mod;
+			}
+		}
+	
+		// fixed module
+		this.modules[this.moduleCount - 8][8] = (!test);
+	
+	},
+	
+	mapData : function(data, maskPattern) {
+		
+		var inc = -1;
+		var row = this.moduleCount - 1;
+		var bitIndex = 7;
+		var byteIndex = 0;
+		
+		for (var col = this.moduleCount - 1; col > 0; col -= 2) {
+	
+			if (col === 6) col--;
+	
+			while (true) {
+	
+				for (var c = 0; c < 2; c++) {
+					
+					if (this.modules[row][col - c] === null) {
+						
+						var dark = false;
+	
+						if (byteIndex < data.length) {
+							dark = ( ( (data[byteIndex] >>> bitIndex) & 1) === 1);
+						}
+	
+						var mask = QRUtil.getMask(maskPattern, row, col - c);
+	
+						if (mask) {
+							dark = !dark;
+						}
+						
+						this.modules[row][col - c] = dark;
+						bitIndex--;
+	
+						if (bitIndex === -1) {
+							byteIndex++;
+							bitIndex = 7;
+						}
+					}
+				}
+								
+				row += inc;
+	
+				if (row < 0 || this.moduleCount <= row) {
+					row -= inc;
+					inc = -inc;
+					break;
+				}
+			}
+		}
+		
+	}
+
+};
+
+QRCode.PAD0 = 0xEC;
+QRCode.PAD1 = 0x11;
+
+QRCode.createData = function(typeNumber, errorCorrectLevel, dataList) {
+	
+	var rsBlocks = QRRSBlock.getRSBlocks(typeNumber, errorCorrectLevel);
+	
+	var buffer = new QRBitBuffer();
+	
+	for (var i = 0; i < dataList.length; i++) {
+		var data = dataList[i];
+		buffer.put(data.mode, 4);
+		buffer.put(data.getLength(), QRUtil.getLengthInBits(data.mode, typeNumber) );
+		data.write(buffer);
+	}
+
+	// calc num max data.
+	var totalDataCount = 0;
+	for (var x = 0; x < rsBlocks.length; x++) {
+		totalDataCount += rsBlocks[x].dataCount;
+	}
+
+	if (buffer.getLengthInBits() > totalDataCount * 8) {
+		throw new Error("code length overflow. (" + 
+            buffer.getLengthInBits() + 
+            ">" +  
+            totalDataCount * 8 + 
+            ")");
+	}
+
+	// end code
+	if (buffer.getLengthInBits() + 4 <= totalDataCount * 8) {
+		buffer.put(0, 4);
+	}
+
+	// padding
+	while (buffer.getLengthInBits() % 8 !== 0) {
+		buffer.putBit(false);
+	}
+
+	// padding
+	while (true) {
+		
+		if (buffer.getLengthInBits() >= totalDataCount * 8) {
+			break;
+		}
+		buffer.put(QRCode.PAD0, 8);
+		
+		if (buffer.getLengthInBits() >= totalDataCount * 8) {
+			break;
+		}
+		buffer.put(QRCode.PAD1, 8);
+	}
+
+	return QRCode.createBytes(buffer, rsBlocks);
+};
+
+QRCode.createBytes = function(buffer, rsBlocks) {
+
+	var offset = 0;
+	
+	var maxDcCount = 0;
+	var maxEcCount = 0;
+	
+	var dcdata = new Array(rsBlocks.length);
+	var ecdata = new Array(rsBlocks.length);
+	
+	for (var r = 0; r < rsBlocks.length; r++) {
+
+		var dcCount = rsBlocks[r].dataCount;
+		var ecCount = rsBlocks[r].totalCount - dcCount;
+
+		maxDcCount = Math.max(maxDcCount, dcCount);
+		maxEcCount = Math.max(maxEcCount, ecCount);
+		
+		dcdata[r] = new Array(dcCount);
+		
+		for (var i = 0; i < dcdata[r].length; i++) {
+			dcdata[r][i] = 0xff & buffer.buffer[i + offset];
+		}
+		offset += dcCount;
+		
+		var rsPoly = QRUtil.getErrorCorrectPolynomial(ecCount);
+		var rawPoly = new QRPolynomial(dcdata[r], rsPoly.getLength() - 1);
+
+		var modPoly = rawPoly.mod(rsPoly);
+		ecdata[r] = new Array(rsPoly.getLength() - 1);
+		for (var x = 0; x < ecdata[r].length; x++) {
+            var modIndex = x + modPoly.getLength() - ecdata[r].length;
+			ecdata[r][x] = (modIndex >= 0)? modPoly.get(modIndex) : 0;
+		}
+
+	}
+	
+	var totalCodeCount = 0;
+	for (var y = 0; y < rsBlocks.length; y++) {
+		totalCodeCount += rsBlocks[y].totalCount;
+	}
+
+	var data = new Array(totalCodeCount);
+	var index = 0;
+
+	for (var z = 0; z < maxDcCount; z++) {
+		for (var s = 0; s < rsBlocks.length; s++) {
+			if (z < dcdata[s].length) {
+				data[index++] = dcdata[s][z];
+			}
+		}
+	}
+
+	for (var xx = 0; xx < maxEcCount; xx++) {
+		for (var t = 0; t < rsBlocks.length; t++) {
+			if (xx < ecdata[t].length) {
+				data[index++] = ecdata[t][xx];
+			}
+		}
+	}
+
+	return data;
+
+};
+
+module.exports = QRCode;
+
+}};const cache={};function require(name){name=name.replace(/^\.\//, "");if(cache[name])return cache[name].exports;const m={exports:{}};cache[name]=m;modules[name](m,m.exports,require);return m.exports;}return require("index");})();
+
+const $=id=>document.getElementById(id), fmt=n=>Math.round(n).toLocaleString(locale);let data=[], health=[], benchmark=[],receiptDate=null;function rows(target,items){$(target).replaceChildren(...items.map(([k,v])=>{let e=document.createElement('div');e.className='line';let x=document.createElement('span'),y=document.createElement('strong');x.textContent=k;y.textContent=v;e.append(x,y);return e}))}let drink='';function alcohol(){let freq=+ $('freq').value,qty=+ $('qty').value,per=drink==='soju'?360*.165*.789:drink==='beer'?500*.05*.789:0;let peak=qty*per,total=peak*freq;return {sw:drink==='soju'?total:0,bw:drink==='beer'?total:0,total,peak,freq,qty}}function selectDrink(v){drink=v;document.querySelectorAll('[data-drink]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.drink===v)));$('drinkdetail').hidden=!v||v==='none';$('freq').disabled=!v||v==='none';$('qty').disabled=!v||v==='none';$('unit').textContent=v==='beer'?'캔':'병';$('drinkbasis').textContent=v==='beer'?'맥주 1캔 = 500mL · 5% 기준':'소주 1병 = 360mL · 16.5% 기준';$('f').dispatchEvent(new Event('input'));}document.querySelectorAll('[data-drink]').forEach(b=>b.onclick=()=>selectDrink(b.dataset.drink));document.querySelectorAll('[data-target]').forEach(b=>b.onclick=()=>{let el=$(b.dataset.target);el.value=Math.max(+el.min,Math.min(+el.max,(+el.value||+el.min)+ +b.dataset.step));$('f').dispatchEvent(new Event('input'));});function drinkingAge(){return ({ko:19,en:21,ja:20,zh:18})[resultRegion]||19;}function drinkingYears(a){return drink==='none'||!drink?0:Math.max(0,a-drinkingAge());}function live(){$('drinkyears').value=String(drinkingYears(+$('age').value||0));const current=$('smoke').value==='current';const former=$('smoke').value==='former';$('pastciglabel').hidden=!former;$('smokeyearslabel').hidden=!(current||former);for(const id of ['pastcigs','smokeyears'])$(id).disabled=$(id).parentElement.hidden;$('ciglabel').hidden=!current;$('cigs').disabled=!current;let a=alcohol();$('alclive').textContent=drink?a.total.toFixed(1)+' g / 주':'—';}let forecast=[];const ages=[0,1,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100];const tables={m:{l:[100000,99732,99673,99635,99582,99449,99231,98934,98592,98131,97457,96457,94873,92469,89007,83898,75905,63640,44318,22445,6799,966],e:[80.57,79.79,75.83,70.86,65.90,60.98,56.11,51.27,46.44,41.64,36.91,32.27,27.76,23.42,19.22,15.23,11.55,8.26,5.72,3.88,2.64,1.84]},f:{l:[100000,99786,99734,99699,99646,99541,99403,99237,99025,98749,98350,97807,97094,96133,94798,92754,89020,81819,67150,44024,19419,4621],e:[86.42,85.61,81.65,76.68,71.72,66.79,61.88,56.98,52.09,47.23,42.41,37.63,32.89,28.19,23.55,19.01,14.70,10.74,7.49,5.05,3.38,2.32]}};const regionalTables={"en":{"m":{"l":[100000,99398,99275,99208,99110,98705,98024,97145,96020,94685,93061,91067,88365,84464,79011,71877,62860,51062,35847,19252,6432,1069]},"f":{"l":[100000,99487,99392,99336,99269,99108,98851,98505,97999,97333,96427,95245,93545,91038,87354,82295,75228,64735,49655,30673,12715,2826]}},"ja":{"m":{"l":[100000,99816,99744,99707,99658,99522,99290,99035,98740,98329,97763,96881,95433,93135,89524,83932,75307,63033,46243,26020,9165,1449]},"f":{"l":[100000,99825,99761,99728,99686,99584,99445,99310,99148,98917,98572,98046,97198,96034,94371,91911,87913,81238,69569,50114,25485,6410]}},"zh":{"m":{"l":[100000,99282.63558,99162.62847,99065.84961,98946.08436,98707.94402,98317.91166,97888.59525,97291.17844,96432.22612,95172.9795,93559.72482,91099.87577,87427.849,81888.43526,73763.52986,61083.03945,44461.92827,24670.6567,6402.071570724886,1661.3469554170324,431.1219697846846]},"f":{"l":[100000,99369.71176,99263.22073,99177.33233,99108.75277,99000.13658,98849.34641,98690.41935,98467.48836,98131.72551,97603.39055,96870.74055,95643.99313,93697.97652,90523.06508,85342.00334,76432.12579,63027.67027,43404.01271,17779.419977632817,7282.915910404287,2983.273032795633]}}};function interp(x,arr){if(x<0||x>100)return null;let i=ages.findIndex(a=>a>=x);if(ages[i]===x)return arr[i];let t=(x-ages[i-1])/(ages[i]-ages[i-1]);return arr[i-1]+t*(arr[i]-arr[i-1]);}let modelResult=[], improvementLines=[];function simulate(a,g,t,l){const sm=$('smoke').value,c=+$('cigs').value,al=alcohol().total,ex=+$('exercise').value,sl=+$('sleep').value,b=+$('weight').value/(+$('height').value/100)**2;
+// Illustrative hazard multipliers, not fitted individual risk coefficients.
+const factors=[['흡연',sm==='current'?1.6+Math.min(c,40)*.035:sm==='former'?1.1:0.9],['음주',al<=100?1:al<=200?1.08:al<=350?1.2:1.4],['운동',ex===0?1.18:ex<150?1.18-.28*ex/150:0.9],['수면',sl<5||sl>10?1.2:sl<7||sl>9?1.1:1],['BMI',b<18.5?1.15:b<25?1:b<30?1.08:b<35?1.25:1.5]];
+const risk=fs=>Math.max(.65,Math.min(3.5,Math.exp(fs.reduce((v,f)=>v+Math.log(f),0)*.65)));const r=risk(factors.map(f=>f[1]));const tailRate=-Math.log(t.l.at(-1)/t.l.at(-2))/5;const curve=(x,k)=>{const lx=x<=100?interp(x,t.l):t.l.at(-1)*Math.exp(-tailRate*(x-100));return Math.pow(Math.max(0,Math.min(1,lx/l)),k);};const expected=k=>{let sum=a;for(let x=a;x<100;){let n=Math.min(x+.1,100);sum+=(n-x)*(curve(x,k)+curve(n,k))/2;x=n;}return sum+curve(100,k)/(tailRate*k);};const surv=x=>curve(x,r),estimate=expected(r),p=100*surv(g); $('lifeage').textContent=estimate.toFixed(1)+'세'; $('lifeleft').textContent='현재부터 약 '+(estimate-a).toFixed(1)+'년'; $('adjusted').textContent=p.toFixed(1)+'%';$('ring').style.setProperty('--pct',p+'%');$('ring').setAttribute('aria-label','생존 가능성 '+p.toFixed(1)+'%');$('targetlabel').textContent=g+'세까지 생존율';modelResult=[];const displayAges=[];if(g>=100){displayAges.push(g,g+10);}else{for(let n=g;n<=100;n+=10)displayAges.push(n);if(displayAges[displayAges.length-1]!==100)displayAges.push(100);}for(const n of displayAges){modelResult.push([n+'세 ('+(n===a?'현재':(n-a)+'년 후')+')',(100*surv(n)).toFixed(1)+'%']);}rows('modelrows',modelResult);const suggestions=[];const improved=factors.map(f=>f[1]);function recommend(i,title,detail,next){suggestions.push([title,detail]);improved[i]=next;}
+if(sm==='current')recommend(0,'금연','하루 '+c+'개비 → 0개비. 금연 상담이나 보건소 금연클리닉을 활용하세요. 장기 금연 시나리오입니다.',1.1);
+if(al>0)recommend(1,'절주','주간 순수 알코올 '+al.toFixed(1)+'g → 0g을 목표로 줄여보세요. 음주량이 많거나 금단 경험이 있다면 의료진과 상의하세요.',1);
+if(ex<150)recommend(2,'운동 늘리기','주 '+ex+'분 → 150분. 빠르게 걷기 등 중강도 활동을 조금씩 늘려보세요.',.9);
+if(sl<7||sl>9)recommend(3,'수면 습관 개선','하루 '+sl+'시간 → 7~9시간의 규칙적인 수면을 목표로 하세요. 지속적인 수면 문제는 진료를 고려하세요.',1);
+if(b<18.5||b>=25)recommend(4,'체중 관리','현재 BMI '+b.toFixed(1)+'. 무리한 감량이나 증량보다 균형 잡힌 식사와 활동을 통해 건강한 체중 범위를 목표로 하세요.',1);
+const rr=risk(improved),ee=expected(rr),pp=100*curve(g,rr);
+$('improvements').replaceChildren(...(suggestions.length?suggestions:[['현재 습관 유지','입력한 항목에서 우선 개선할 부분이 없습니다. 정기 검진과 균형 잡힌 생활을 유지하세요.']]).map(([title,detail])=>{const card=document.createElement('div');card.className='improve-card';const h=document.createElement('h4'),p=document.createElement('p');h.textContent=title;p.textContent=detail;card.append(h,p);return card;}));
+const delta=ee-estimate,dp=pp-p;const comparison=[['예상 수명',estimate.toFixed(1)+'세 → '+ee.toFixed(1)+'세'],[g+'세 생존율',p.toFixed(1)+'% → '+pp.toFixed(1)+'%'],['변화','+'+Math.max(0,delta).toFixed(1)+'년 / +'+Math.max(0,dp).toFixed(1)+'%p']];$('improveSummary').innerHTML=`<small>모든 개선을 유지할 경우</small><div class="compare-grid"><div><small>현재</small><strong>${estimate.toFixed(1)}세</strong></div><div><small>개선 후</small><strong>${ee.toFixed(1)}세</strong></div></div><div class="gain">예상 수명 변화 +${Math.max(0,delta).toFixed(1)}년</div><div class="compare-prob">${g}세 생존율 <b>${p.toFixed(1)}% → ${pp.toFixed(1)}%</b></div>`;improvementLines=[...suggestions,...comparison];for(const el of Array.from($('modelrows').children)){const pct=parseFloat(el.lastChild.textContent);const bar=document.createElement('div');bar.className='survival-track';const fill=document.createElement('div');fill.style.width=pct+'%';bar.append(fill);el.after(bar);}}
+const regionInfo={ko:['대한민국 · 2023년 생명표','https://kosis.kr','질병관리청 국가건강정보포털','https://health.kdca.go.kr/'],en:['United States · CDC/NCHS 2023 life tables','https://www.cdc.gov/nchs/data/nvsr/nvsr74/nvsr74-06.pdf','CDC · Healthy living','https://www.cdc.gov/healthy-living/'],ja:['日本 · 厚生労働省 2023年簡易生命表','https://www.ipss.go.jp/syoushika/tohkei/Data/Popular2025/T05-11.files/sheet001.htm','厚生労働省 · 健康づくり','https://www.mhlw.go.jp/'],zh:['中国 · WHO 2019年生命表','https://www.who.int/data/gho/data/indicators/indicator-details/GHO/gho-ghe-life-tables-by-country','国家卫生健康委员会','https://www.nhc.gov.cn/']};
+function regionalSources(){tobaccoSource();const info=regionInfo[resultRegion], list=document.querySelector('#sources ol');const first=list.querySelector('li a');first.textContent=info[0];first.href=info[1];const notes={ko:'기존 내장 생명표 및 보간값.',en:'CDC Table B, all origins, male/female survivors.',ja:'男女別生存数（5歳間隔）を使用。',zh:'WHO 2019年男女生存人数；85岁后根据85岁剩余寿命采用指数外推。'};first.nextElementSibling.textContent=notes[resultRegion];let local=list.querySelector('.regional-guidance');if(!local){local=document.createElement('li');local.className='regional-guidance';local.append(document.createElement('a'));list.append(local);}local.firstChild.textContent=info[2];local.firstChild.href=info[3];local.firstChild.target='_blank';local.firstChild.rel='noopener noreferrer';const label=document.querySelector('#sources summary small');label.textContent=({ko:'참고 자료 8개 · 펼쳐보기',en:'8 references · Expand',ja:'参考資料8件 · 開く',zh:'8项参考资料 · 展开'})[lang];const method=document.querySelectorAll('#sources .source-body > p');method[2].textContent=({ko:'선택한 지역의 연령·성별 생존자 수를 사용하고 생활 습관별 자체 위험 배수를 적용합니다. 기대수명은 생존 곡선을 적분합니다.',en:'Uses the selected region’s age- and sex-specific survival table with illustrative lifestyle hazard multipliers. Life expectancy is integrated from the survival curve.',ja:'選択地域の年齢・性別別生存数に独自の生活習慣リスク係数を適用し、生存曲線を積分します。',zh:'采用所选地区年龄和性别生存人数及自设生活习惯风险系数，通过生存曲线积分估算寿命。'})[lang];method[3].textContent=({ko:'위험 배수는 개인별로 검증되지 않았습니다. 중국은 85세 이후, 그 외 지역은 100세 이후 외삽 추정입니다.',en:'Lifestyle multipliers are not individually validated. Ages above 85 for China and 100 elsewhere are extrapolated.',ja:'生活習慣係数は個人別に検証されていません。中国は85歳以降、その他は100歳以降を外挿します。',zh:'生活习惯系数未经个体验证。中国85岁以上、其他地区100岁以上为外推估算。'})[lang];}
+function predict(){regionalSources();let a=+$('age').value,g=+$('goal').value,t=(regionalTables[resultRegion]||tables)[$('sex').value];simulate(a,g,t,interp(a,t.l));}function validateInputs(){
+const form=$('f'), errors=[];const names={age:'현재 나이',sleep:'하루 평균 수면',play:'하루 평균 게임·영상',work:'하루 평균 공부·일',goal:'목표 수명',sex:'성별 (생명표 기준)',smoke:'흡연 상태',cigs:'하루 담배 개비',pastcigs:'과거 하루 흡연량',smokeyears:'흡연 기간',freq:'일주일에 몇 번 마시나요',qty:'한 번에 얼마나 마시나요',drinkyears:'음주 기간',exercise:'일주일에 운동하는 시간',exyears:'운동 기간',height:'키',weight:'몸무게'};
+const msg=(ko,en,ja,zh)=>({ko,en,ja,zh}[lang]||en);const add=(ids,message)=>errors.push({ids,message});
+form.querySelectorAll('.field-error').forEach(e=>e.remove());form.querySelectorAll('[aria-invalid=true]').forEach(e=>e.removeAttribute('aria-invalid'));
+for(const el of form.querySelectorAll('input,select')){if(el.disabled||!el.willValidate)continue;const v=el.validity;if(v.valid&&!(el.type==='number'&&el.value===''))continue;let m;if(v.valueMissing||el.value==='')m=msg('값을 입력하세요.','Enter a value.','値を入力してください。','请输入数值。');else if(v.rangeUnderflow||v.rangeOverflow)m=msg(`${el.min}~${el.max} 범위로 입력하세요.`,`Enter a value from ${el.min} to ${el.max}.`,`${el.min}～${el.max}の範囲で入力してください。`,`请输入 ${el.min} 至 ${el.max} 之间的值。`);else if(v.stepMismatch)m=msg(`${el.step||1} 단위로 입력하세요.`,`Use increments of ${el.step||1}.`,`${el.step||1}刻みで入力してください。`,`请按 ${el.step||1} 的步长输入。`);else m=msg('올바른 숫자를 입력하세요.','Enter a valid number.','正しい数値を入力してください。','请输入有效数字。');add([el.id],m);}
+if(!drink)add(['drinkyears'],tr('음주 유형을 선택하세요.'));const n=id=>Number($(id).value), a=n('age');if(n('sleep')+n('play')+n('work')+n('exercise')/420>24+1e-9)add(['exercise','sleep','play','work'],msg('운동을 포함한 하루 평균 활동 시간이 24시간을 초과합니다.','Daily activities including exercise exceed 24 hours.','運動を含む一日の活動時間が24時間を超えています。','包括运动在内的每日活动超过24小时。'));if(drink&&drink!=='none'&&a<drinkingAge())add(['qty'],msg(`이 지역의 음주 계산은 ${drinkingAge()}세부터 가능합니다.`,`Alcohol estimates start at age ${drinkingAge()} in this region.`,`この地域の飲酒計算は${drinkingAge()}歳からです。`,`本地区饮酒估算从${drinkingAge()}岁开始。`));if($('smoke').value&&$('smoke').value!=='never'&&n('smokeyears')<=0)add(['smokeyears'],msg('흡연 기간을 0보다 크게 입력하세요.','Enter a positive smoking duration.','喫煙期間を入力してください。','请输入大于零的吸烟年数。'));if(n('exercise')>0&&n('exyears')<=0)add(['exyears'],msg('운동 기간을 0보다 크게 입력하세요.','Enter a positive exercise duration.','運動期間を入力してください。','请输入大于零的运动年数。'));if(n('sleep')+n('play')+n('work')>24)add(['sleep','play','work'],msg('수면·게임·공부 시간 합계가 24시간을 초과합니다.','Sleep, gaming and work total more than 24 hours.','睡眠・ゲーム・仕事の合計が24時間を超えています。','睡眠、游戏和工作时间合计超过24小时。'));if(n('goal')<a)add(['goal'],msg('목표 나이는 현재 나이 이상이어야 합니다.','Target age must be at least your current age.','目標年齢は現在の年齢以上にしてください。','目标年龄不得低于当前年龄。'));
+const sm=$('smoke').value;if(sm&&sm!=='never'){const id=sm==='former'?'pastcigs':'cigs';if(n(id)<=0)add([id],msg('흡연량은 1개비 이상 입력하세요.','Enter at least 1 cigarette.','1本以上入力してください。','请输入至少1支。'));}for(const id of ['smokeyears','exyears','playyears','workyears']){if($(id).disabled)continue;const max=a;if(n(id)>max)add([id],msg(`기간은 최대 ${max}년까지 입력할 수 있습니다.`,`Duration cannot exceed ${max} years.`,`期間は最大${max}年です。`,`时长不得超过 ${max} 年。`));}
+if(errors.length){$('error').textContent=errors.map(e=>e.ids.map(id=>tr(names[id]||id)).join(' / ')+': '+e.message).join('\n');for(const e of errors){for(const id of e.ids)$(id).setAttribute('aria-invalid','true');const el=e.ids[0]==='drinkyears'&&!drink?document.querySelector('.drinkchoices'):$(e.ids[0]);const note=document.createElement('small');note.className='field-error';note.textContent=e.message;el.insertAdjacentElement('afterend',note);}const first=errors[0].ids[0]==='drinkyears'&&!drink?document.querySelector('[data-drink]'):$(errors[0].ids[0]);first.focus();first.scrollIntoView({block:'center',behavior:'smooth'});return false;}$('error').textContent='';return true;}
+const tobaccoPrices={ko:{currency:'KRW',locale:'ko-KR',code:'kor',points:[[2022,4500],[2024,4500]]},en:{currency:'USD',locale:'en-US',code:'usa',points:[[2022,8.27],[2024,8.91]]},ja:{currency:'JPY',locale:'ja-JP',code:'jpn',points:[[2022,600],[2024,600]]},zh:{currency:'CNY',locale:'zh-CN',code:'chn',points:[[2022,16.34],[2024,17.99]]}};
+function tobaccoPrice(region,year){const p=tobaccoPrices[region].points; if(year<=p[0][0])return p[0][1];if(year>=p[1][0])return p[1][1];return p[0][1]+(p[1][1]-p[0][1])*(year-p[0][0])/(p[1][0]-p[0][0]);}
+function tobaccoMoney(value,region){const p=tobaccoPrices[region];return new Intl.NumberFormat(p.locale,{style:'currency',currency:p.currency,currencyDisplay:'code'}).format(value);}
+function tobaccoEstimate(cigarettes,region,date){const year=new Date(date||Date.now()).getFullYear(),price=tobaccoPrice(region,year);return {year,price,total:cigarettes/20*price};}
+function tobaccoNote(region,date){const t=tobaccoEstimate(0,region,date), money=tobaccoMoney(t.price,region);return ({ko:`${t.year}년 기준 추정 · 20개비 ${money}`,en:`${t.year} estimate · 20 cigarettes ${money}`,ja:`${t.year}年推定・20本 ${money}`,zh:`${t.year}年估算 · 每20支 ${money}`})[lang];}
+function tobaccoSource(){const p=tobaccoPrices[resultRegion],li=document.querySelector('#tobacco-source'),a=li.querySelector('a');a.href=`https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-${p.code}.pdf`;a.textContent=({ko:'담배 가격 · WHO 국가별 자료',en:'Cigarette prices · WHO country profile',ja:'たばこ価格・WHO国別資料',zh:'香烟价格 · WHO国家资料'})[lang];li.querySelector('p').textContent=({ko:'WHO 2022·2024년 최다 판매 브랜드 20개비 가격. 중간 연도는 선형 보간, 범위 밖은 가장 가까운 관측값을 사용합니다. 전체 브랜드 평균이나 실제 지출은 아닙니다. 누적 흡연량에 영수증 생성 연도의 기준 가격을 곱합니다.',en:'WHO 2022 and 2024 most-sold brand prices per 20 cigarettes. Intermediate years are interpolated; outside this range the nearest observation is used. Not an all-brand average or actual spending. Total cigarettes are valued at the receipt-year reference price.',ja:'WHOの2022・2024年の最多販売銘柄20本の価格。中間年は線形補間、範囲外は最も近い観測値を使用。全銘柄平均や実際の支出ではなく、累積本数を発行年の参考価格で換算します。',zh:'WHO 2022及2024年最畅销品牌每20支价格。中间年份线性插值，范围外使用最近观测值。并非所有品牌均价或实际支出；累计吸烟量按收据生成年度参考价格计算。'})[lang];}
+
+function generate(){let a=+$('age').value,s=+$('sleep').value,p=+$('play').value,w=+$('work').value,g=+$('goal').value;if(!validateInputs())return false;$('error').textContent='';let d=a*365.2425;data=[['살아온 시간',fmt(d*24)+'시간'],['수면',fmt(d*s)+'시간'],['게임·영상',fmt(365.2425*p*+$('playyears').value)+'시간'],['공부·일',fmt(365.2425*w*+$('workyears').value)+'시간'],['그 외 일상',fmt(Math.max(0,d*(24-s)-365.2425*(p*+$('playyears').value+w*+$('workyears').value)-Math.min(d*24,+$('exercise').value*+$('exyears').value*365.2425/420)))+'시간'],['먹은 식사 (하루 3끼)',fmt(d*3)+'끼']];const sm=$('smoke').value, al=alcohol(), cigarettes=sm==='never'?0:+$(sm==='former'?'pastcigs':'cigs').value*+$('smokeyears').value*365.2425, drinks=drink==='none'?0:al.qty*al.freq*drinkingYears(a)*365.2425/7, ethanol=drink==='none'?0:al.total*drinkingYears(a)*365.2425/7/1000, exercise=+$('exercise').value*+$('exyears').value*365.2425/7/60;const habits=[['🚭','누적 담배',fmt(cigarettes)+'개비',fmt(cigarettes/20)+'갑'],['🍺','성인 이후 누적 음주',fmt(drinks)+(drink==='soju'?'병':drink==='beer'?'캔':'회'), '누적 순수 알코올 '+ethanol.toFixed(1)+' kg'],['🏃','누적 운동',fmt(exercise)+'시간',fmt(exercise/24)+'일'],['🌙','수면',fmt(d*s)+'시간',fmt(d*s/24)+'일']];$('livedhours').textContent=fmt(d*24)+'시간';$('liveddays').textContent=fmt(d)+'일';const cigaretteCost=tobaccoMoney(tobaccoEstimate(cigarettes,resultRegion,receiptDate).total,resultRegion), cigaretteNote=tobaccoNote(resultRegion,receiptDate);$('habitcards').replaceChildren(...habits.map(([icon,k,v,sub],i)=>{const el=document.createElement('div');el.className='habit-card';for(const [tag,text] of [['small',icon+' '+k],['strong',v],['small',sub]]){const n=document.createElement(tag);n.textContent=text.replace(/^(🚭|🍺|🏃|🌙)\s*/u,'');el.append(n)}if(i===0){el.classList.add('smoking-card');const cost=document.createElement('div');cost.className='smoking-cost';for(const [tag,text] of [['small','누적 담배 지출'],['strong',cigaretteCost],['small',cigaretteNote]]){const n=document.createElement(tag);n.textContent=text;cost.append(n)}el.append(cost)}return el}));data.push(...habits.slice(0,3).map(([icon,k,v,sub],i)=>[k,v+' · '+sub+(i===0?' / 누적 담배 지출 '+cigaretteCost+' · '+cigaretteNote:'')]));$('subtitle').textContent=a+'년의 인생 결산 · '+regionInfo[resultRegion][0]+' · '+new Date(receiptDate||Date.now()).toLocaleDateString(locale);$('lines').replaceChildren(...data.slice(2,6).map(([k,v])=>{let e=document.createElement('div');e.className='line';let x=document.createElement('span'),y=document.createElement('strong');x.textContent=k;y.textContent=v;e.append(x,y);return e}));$('remaining').textContent=fmt((g-a)*365.2425*24)+'시간';predict();$('printer').hidden=false;$('receipt').hidden=false;translate($('receipt'));fitReceiptNumbers();$('sources').hidden=false;$('sources').open=false;$('receipt').classList.remove('printing');void $('receipt').offsetWidth;$('receipt').classList.add('printing');$('display').textContent='결산 완료';$('actions').hidden=false;$('actions').style.display='flex';updateReceiptQr();return true}$('f').addEventListener('input',()=>{$('error').textContent='';$('f').querySelectorAll('.field-error').forEach(e=>e.remove());$('f').querySelectorAll('[aria-invalid=true]').forEach(e=>e.removeAttribute('aria-invalid'));live();$('display').textContent='입력 대기';$('printer').hidden=true;$('receipt').hidden=true;$('sources').hidden=true;$('actions').hidden=true;$('actions').style.display='none'});selectDrink('');live();$('f').noValidate=true;$('f').onsubmit=e=>{e.preventDefault();receiptDate=new Date().toISOString();try{if(generate()){$('printer').scrollIntoView({behavior:'smooth'})}}catch(err){$('error').textContent=({ko:'입력값 검사는 통과했지만 결과 생성 중 내부 오류가 발생했습니다. 다시 시도해 주세요.',en:'Inputs passed validation, but an internal error occurred while generating the result. Please retry.',ja:'入力は正常ですが、結果生成中に内部エラーが発生しました。再試行してください。',zh:'输入验证通过，但生成结果时发生内部错误。请重试。'}[lang]);console.error(err)}};function makeImage(){
+ const root=$('receipt'), base=root.getBoundingClientRect(), W=root.offsetWidth,H=root.offsetHeight, scale=Math.min(3,4096/W,12000/H); if(!W||!H)throw Error('Receipt is not visible');
+ const c=document.createElement('canvas');c.width=Math.ceil((W+24)*scale);c.height=Math.ceil((H+24)*scale);const ctx=c.getContext('2d');ctx.scale(scale,scale);ctx.fillStyle='#e8e4db';ctx.fillRect(0,0,W+24,H+24);ctx.translate(12,12);ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(W,0);ctx.lineTo(W,H-7);for(let i=1;i<=48;i++)ctx.lineTo(W*(1-i/48),H-(i%2?0:7));ctx.closePath();ctx.clip();
+ const pos=e=>{const r=e.getBoundingClientRect();return {x:r.left-base.left,y:r.top-base.top,w:r.width,h:r.height}};
+ const transparent=v=>!v||v==='transparent'||v==='rgba(0, 0, 0, 0)';
+ function shape(b,r=0){ctx.beginPath();r=Math.min(r,b.w/2,b.h/2);if(ctx.roundRect)ctx.roundRect(b.x,b.y,b.w,b.h,r);else ctx.rect(b.x,b.y,b.w,b.h);}
+ function paint(e){const s=getComputedStyle(e),b=pos(e);if(s.display==='none'||s.visibility==='hidden'||!b.w||!b.h)return;const r=parseFloat(s.borderTopLeftRadius)||0;
+ if(!transparent(s.backgroundColor)){shape(b,r);ctx.fillStyle=s.backgroundColor;ctx.fill();}
+ if(e.classList.contains('ring')){const cx=b.x+b.w/2,cy=b.y+b.h/2,rad=Math.min(b.w,b.h)/2,p=Math.max(0,Math.min(100,parseFloat(s.getPropertyValue('--pct'))||0));ctx.beginPath();ctx.arc(cx,cy,rad,0,Math.PI*2);ctx.fillStyle='#d9ddd2';ctx.fill();if(p>0){ctx.beginPath();ctx.moveTo(cx,cy);ctx.arc(cx,cy,rad,-Math.PI/2,-Math.PI/2+2*Math.PI*p/100);ctx.closePath();ctx.fillStyle='#34594b';ctx.fill();}ctx.beginPath();ctx.arc(cx,cy,rad-(parseFloat(getComputedStyle(e,'::before').top)||13),0,Math.PI*2);ctx.fillStyle='#f0f2ea';ctx.fill();}
+ if(e.parentElement?.classList.contains('survival-track')){const g=ctx.createLinearGradient(b.x,b.y,b.x+b.w,b.y);g.addColorStop(0,'#34594b');g.addColorStop(1,'#6b8977');shape(b,r);ctx.fillStyle=g;ctx.fill();}
+ if(e.tagName==='IMG'&&e.complete&&e.naturalWidth){ctx.drawImage(e,b.x,b.y,b.w,b.h);return;}
+ if(e.id==='receiptQr'){paintQr(ctx,b.x,b.y,Math.min(b.w,b.h));return;}if(e.tagName==='CANVAS'){ctx.drawImage(e,b.x,b.y,b.w,b.h);return;}
+ const sides=['Top','Right','Bottom','Left'];const widths=sides.map(k=>parseFloat(s['border'+k+'Width'])||0);if(widths.every(v=>v>0&&v===widths[0])&&s.borderTopStyle==='solid'){ctx.strokeStyle=s.borderTopColor;ctx.lineWidth=widths[0];shape({x:b.x+widths[0]/2,y:b.y+widths[0]/2,w:b.w-widths[0],h:b.h-widths[0]},r);ctx.stroke();}else sides.forEach((k,i)=>{if(!widths[i]||s['border'+k+'Style']==='none')return;ctx.beginPath();ctx.strokeStyle=s['border'+k+'Color'];ctx.lineWidth=widths[i];ctx.setLineDash(s['border'+k+'Style']==='dashed'?[5,4]:[]);const x=b.x,y=b.y,w=b.w,h=b.h;const pts=[[x,y,x+w,y],[x+w,y,x+w,y+h],[x,y+h,x+w,y+h],[x,y,x,y+h]][i];ctx.moveTo(pts[0],pts[1]);ctx.lineTo(pts[2],pts[3]);ctx.stroke();ctx.setLineDash([]);});
+ for(const n of e.childNodes){if(n.nodeType===1){paint(n);continue;}if(n.nodeType!==3||!n.textContent.trim())continue;const text=n.textContent,range=document.createRange();ctx.font=`${s.fontStyle} ${s.fontWeight} ${s.fontSize} ${s.fontFamily}`;ctx.fillStyle=s.color;ctx.textBaseline='alphabetic';ctx.textAlign='left';const metrics=ctx.measureText('Mg');const ascent=metrics.fontBoundingBoxAscent||parseFloat(s.fontSize)*.8,descent=metrics.fontBoundingBoxDescent||parseFloat(s.fontSize)*.2;let offset=0,runs=[];for(const ch of text){range.setStart(n,offset);offset+=ch.length;range.setEnd(n,offset);const q=range.getBoundingClientRect();if(!q.width||!q.height)continue;let run=runs[runs.length-1];if(!run||Math.abs(run.top-q.top)>1){run={text:'',left:q.left,right:q.right,top:q.top,height:q.height};runs.push(run);}run.text+=ch;run.left=Math.min(run.left,q.left);run.right=Math.max(run.right,q.right);}for(const run of runs){if(!run.text.trim())continue;const width=run.right-run.left,measured=ctx.measureText(run.text).width;if(!measured)continue;ctx.save();ctx.translate(run.left-base.left,run.top-base.top+(run.height-ascent-descent)/2+ascent);ctx.scale(width/measured,1);ctx.fillText(run.text,0,0);ctx.restore();}}
+
+ }
+ paint(root);return c;
+}
+function fitReceiptNumbers(){
+ for(const id of ['livedhours','lifeage']){const e=$(id);if(!e||!e.getClientRects().length)continue;e.style.removeProperty('font-size');const available=e.parentElement.clientWidth-parseFloat(getComputedStyle(e.parentElement).paddingLeft)-parseFloat(getComputedStyle(e.parentElement).paddingRight);let size=parseFloat(getComputedStyle(e).fontSize);while(e.scrollWidth>available-2&&size>10){size-=.5;e.style.fontSize=size+'px';}}
+}
+async function captureReceipt(){
+ const root=$('receipt');root.classList.remove('printing');if(document.fonts?.ready)await document.fonts.ready;await updateReceiptQr();translate(root);fitReceiptNumbers();await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));return makeImage();
+}
+window.addEventListener('resize',fitReceiptNumbers);
+// Social layouts are drawn independently at exact pixel dimensions, not cropped from the long receipt.
+async function makeSocialImage(format){
+ const story=format==='story', W=1080,H=story?1920:1350,c=document.createElement('canvas');c.width=W;c.height=H;const ctx=c.getContext('2d');
+ const ink='#263e34',muted='#68756a',cream='#fffdf6',gold='#bba477',bg='#223c32';
+ const font='system-ui, sans-serif', serif='Georgia, serif';
+ function text(value,x,y,size=30,color=ink,weight=500,family=font,maxWidth=Infinity,align='left'){
+  const valueStr=String(value??'');ctx.font=`${weight} ${size}px ${family}`;while(ctx.measureText(valueStr).width>maxWidth&&size>16){size-=1;ctx.font=`${weight} ${size}px ${family}`;}ctx.fillStyle=color;ctx.textAlign=align;ctx.textBaseline='middle';ctx.fillText(valueStr,x,y);
+ }
+ function rect(x,y,w,h,r,color){ctx.beginPath();if(ctx.roundRect)ctx.roundRect(x,y,w,h,r);else ctx.rect(x,y,w,h);ctx.fillStyle=color;ctx.fill();}
+ function line(x,y,w,color='#d4d8cc',dash=false){ctx.beginPath();ctx.strokeStyle=color;ctx.lineWidth=2;ctx.setLineDash(dash?[8,8]:[]);ctx.moveTo(x,y);ctx.lineTo(x+w,y);ctx.stroke();ctx.setLineDash([]);}
+ const top=story?246:78, bottom=story?1668:1272, left=83,right=997,inner=131,width=818;
+ ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);ctx.strokeStyle='#bba47755';ctx.lineWidth=2;ctx.strokeRect(30,30,W-60,H-60);
+ text('THE PERSONAL EDITION',left,top-28,22,'#d2d3bf',600,font);text('VOL. 01',right,top-28,22,'#d2d3bf',600,font,150,'right');
+ // Paper silhouette with an even tear edge.
+ ctx.beginPath();ctx.moveTo(left,top);ctx.lineTo(right,top);ctx.lineTo(right,bottom-10);for(let i=1;i<=48;i++)ctx.lineTo(right-(right-left)*i/48,bottom-(i%2?0:10));ctx.closePath();ctx.fillStyle=cream;ctx.fill();
+ const y=top+65;
+ text('LIFE RECEIPT.',W/2,y+5,80,ink,400,serif,790,'center');
+ text(tr('내 시간의 기록'),W/2,y+75,29,muted,600,font,790,'center');
+ line(inner,y+114,width,'#a7afa0',true);
+ const age=+$('age').value;const date=new Date(receiptDate||Date.now()).toLocaleDateString(locale);
+ text(`${tr('연령')}  ${age}`,inner,y+151,25,muted,600,font,390);text(date,right-48,y+151,25,muted,500,font,390,'right');
+ const heroY=y+188;rect(inner,heroY,width,story?240:206,12,'#e9eee4');
+ text(tr('살아온 시간'),W/2,heroY+47,31,muted,600,font,730,'center');
+ text(fmt(age*365.2425*24),W/2,heroY+(story?131:115),94,ink,400,serif,735,'center');
+ text('HOURS LIVED',W/2,heroY+(story?197:166),23,'#58705e',650,font,730,'center');
+ const section=heroY+(story?285:248), rowH=story?77:66;
+ text('01 / TIME RECORD',inner,section,23,muted,650,font);line(inner,section+24,width);
+ const items=[['총 수면 시간',data[1][1]],['게임·영상 시간',data[2][1]],['공부·일 시간',data[3][1]],['총 운동 시간',document.querySelector('#habitcards .habit-card:nth-child(3) strong')?.textContent||'—']];
+ items.forEach(([label,value],i)=>{const yy=section+25+rowH*(i+.5);text(tr(label),inner,yy,30,ink,550,font,390);text(tr(value),right-48,yy,31,ink,650,font,410,'right');line(inner,section+25+rowH*(i+1),width,'#d8dbd0',true);});
+ const statY=section+25+rowH*4+34+(story?20:0), statH=story?190:153, gap=14, sw=(width-gap)/2;
+ rect(inner,statY,sw,statH,9,'#edf0e7');rect(inner+sw+gap,statY,sw,statH,9,'#edf0e7');
+ text(tr('수명 추정치'),inner+sw/2,statY+35,26,muted,600,font,sw-24,'center');text($('lifeage').textContent,inner+sw/2,statY+(story?105:93),56,ink,400,serif,sw-26,'center');
+ text($('targetlabel').textContent,inner+sw+gap+sw/2,statY+35,26,muted,600,font,sw-24,'center');text($('adjusted').textContent,inner+sw+gap+sw/2,statY+(story?105:93),56,ink,400,serif,sw-26,'center');
+ if(story){text(tr('현재 나이부터 목표 나이까지'),inner+sw+gap+sw/2,statY+158,22,muted,500,font,sw-24,'center');text('ILLUSTRATIVE ESTIMATE',inner+sw/2,statY+158,18,muted,500,font,sw-24,'center');}
+ const footer=statY+statH+(story?51:34);text(tr('예상 수명·생존율은 검증된 개인 예측이 아닌 참고용 추정치입니다.'),W/2,footer,22,muted,450,font,width,'center');
+ const qrBox=story?144:126, qrX=(W-qrBox)/2, qrY=story?bottom-204:bottom-160;paintQr(ctx,qrX,qrY,qrBox);
+ text('END OF RECEIPT',W/2,bottom-21,15,muted,600,font,600,'center');
+ text('TIME IS YOURS.',W/2,bottom+38,20,'#c8cdbb',600,font,600,'center');
+ return c;
+}
+async function imageFile(format='full'){
+ if(document.fonts?.ready)await document.fonts.ready;
+ const canvas=format==='full'?await captureReceipt():await makeSocialImage(format);
+ const blob=await new Promise((resolve,reject)=>canvas.toBlob(b=>b?resolve(b):reject(Error('PNG encoding failed')),'image/png'));
+ return new File([blob],`life-receipt-${format}.png`,{type:'image/png'});
+}
+function downloadImage(file){const url=URL.createObjectURL(file),a=document.createElement('a');a.download=file.name;a.href=url;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);}
+let exportFormat='full',exportRevision=0,exportFile=null;
+async function updateExport(format){
+ const revision=++exportRevision;exportFormat=format;exportFile=null;const img=$('exportImage'),stage=img.parentElement;
+ document.querySelectorAll('[data-format]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.format===format)));
+ $('exportDownload').disabled=true;stage.dataset.format=format;stage.setAttribute('aria-busy','true');
+ if(img.dataset.url){URL.revokeObjectURL(img.dataset.url);delete img.dataset.url;}img.removeAttribute('src');
+ try{const file=await imageFile(format);if(revision!==exportRevision)return;exportFile=file;img.dataset.url=URL.createObjectURL(file);img.src=img.dataset.url;$('exportDownload').disabled=false;}
+ catch(e){if(revision===exportRevision){console.error(e);alert(tr('이미지 생성에 실패했습니다. 다시 시도해 주세요.'));}}
+ finally{if(revision===exportRevision)stage.setAttribute('aria-busy','false');}
+}
+$('exportClose').onclick=()=>{const d=$('exportPreview');if(d.close)d.close();else d.removeAttribute('open');};
+$('exportPreview').addEventListener('close',()=>{exportRevision++;exportFile=null;const img=$('exportImage');if(img.dataset.url){URL.revokeObjectURL(img.dataset.url);delete img.dataset.url;}img.removeAttribute('src');});
+document.querySelectorAll('.export-formats button').forEach(b=>b.onclick=()=>updateExport(b.dataset.format));
+$('exportDownload').onclick=()=>{if(exportFile)downloadImage(exportFile);};
+$('save').onclick=()=>{const d=$('exportPreview');if(d.showModal)d.showModal();else d.setAttribute('open','');updateExport('full');};
+const shareFields=['age','sleep','play','work','goal','sex','smoke','cigs','pastcigs','smokeyears','freq','qty','drinkyears','exercise','exyears','height','weight','playyears','workyears'];
+function resultLink(){$('drinkyears').value=String(drinkingYears(+$('age').value));const url=new URL(QR_CONFIG.explicitUrl||location.href);url.search='';url.searchParams.set('lang',lang);url.hash='result='+encodeURIComponent(JSON.stringify({v:3,region:resultRegion,drink,date:receiptDate,values:shareFields.map(id=>$(id).value)}));return url.href;}
+const QR_CONFIG={explicitUrl:'https://life-to-receipt.kro.kr/',utmSource:'receipt_qr'};
+const qrAssetCache=new Map();
+function siteEntryUrl(){try{const url=new URL(QR_CONFIG.explicitUrl||location.href);if(!/^https?:$/.test(url.protocol)||['localhost','127.0.0.1','[::1]'].includes(url.hostname))return null;url.hash='';url.search='';url.searchParams.set('utm_source',QR_CONFIG.utmSource);return url.href;}catch(e){return null;}}
+function getQr(){const url=siteEntryUrl();if(!url)return null;if(qrAssetCache.has(url))return qrAssetCache.get(url);try{const qr=new LocalQRCode(-1,0);qr.addData(url);qr.make();qrAssetCache.set(url,qr);return qr;}catch(e){console.warn('QR generation failed',e);return null;}}
+function paintQr(ctx,x,y,max){const qr=getQr();if(!qr)return false;const n=qr.getModuleCount(),count=n+8,step=Math.floor(max/count);if(step<1)return false;const side=count*step;const ox=Math.round(x+(max-side)/2),oy=Math.round(y+(max-side)/2);ctx.fillStyle='#fff';ctx.fillRect(ox,oy,side,side);ctx.fillStyle='#17251e';for(let r=0;r<n;r++)for(let c=0;c<n;c++)if(qr.isDark(r,c))ctx.fillRect(ox+(c+4)*step,oy+(r+4)*step,step,step);return true;}
+function updateReceiptQr(){const block=$('receiptQrBlock'),canvas=$('receiptQr');const qr=getQr();block.hidden=!qr;if(!qr)return null;canvas.width=canvas.height=(qr.getModuleCount()+8)*6;paintQr(canvas.getContext('2d'),0,0,canvas.width);return canvas;}
+const shareMessages={ko:['공유 링크에는 입력한 나이와 건강·생활 습관 정보가 포함됩니다. 링크를 받은 사람이 결과를 볼 수 있습니다. 공유할까요?','사이트를 웹에 게시한 후 결과 링크를 공유할 수 있습니다. 현재는 로컬 파일입니다.','결과 링크를 복사하세요.'],en:['This link includes your age and health and lifestyle inputs. Anyone with the link can view your result. Share?','Publish this site online before sharing a result link. This is a local file.','Copy the result link.'],ja:['リンクには年齢や健康・生活習慣の入力情報が含まれます。共有しますか？','サイトを公開してから結果リンクを共有してください。','結果リンクをコピーしてください。'],zh:['链接包含年龄及健康和生活习惯信息。是否分享？','请先将网站发布到网上，再分享结果链接。','请复制结果链接。']};
+const shareCopy={ko:['친구가 인생 영수증을 공유했어요!','지금까지 얼마나 많은 시간을 써왔을까? 앞으로는 얼마나 더 살 수 있을까?','친구의 인생 영수증 보기','너도 한번 만들어 봐! 지금까지 살아온 시간과 앞으로의 시간을 한 장의 영수증으로 확인해 봐.','나만의 인생 영수증 만들기'],en:['A friend shared their Life Receipt!','How have we spent our time so far? How much longer might we live?','See your friend’s Life Receipt','Try it yourself! See your life so far and the years ahead in one receipt.','Make your own Life Receipt'],ja:['友達が人生レシートを共有しました！','今までどれだけの時間を使ってきた？これからあとどれくらい生きられるかな？','友達の人生レシートを見る','あなたも作ってみてね！これまでとこれからの人生を一枚のレシートで。','自分の人生レシートを作る'],zh:['朋友分享了人生小票！','到现在为止，我们花了多少时间？未来还能活多久呢？','查看朋友的人生小票','你也来试试吧！用一张小票看看过去和未来的人生。','制作自己的人生小票']};
+function shareText(url){const home=new URL(QR_CONFIG.explicitUrl||location.href);home.hash='';home.search='';home.searchParams.set('lang',lang);const c=shareCopy[lang]||shareCopy.en;return `${c[0]}\n\n${c[1]}\n\n${c[2]}\n${url}\n\n${c[3]}\n\n${c[4]}\n${home.href}`;}
+$('share').onclick=async()=>{const m=shareMessages[lang];if(!/^https?:$/.test(location.protocol)){alert(m[1]);return;}if(!confirm(m[0]))return;const url=resultLink(), message=shareText(url);if(navigator.share){try{await navigator.share({title:({ko:'인생 영수증',en:'Life Receipt',ja:'人生レシート',zh:'人生小票'})[lang],text:message});return;}catch(e){if(e.name==='AbortError')return;}}try{await navigator.clipboard.writeText(message);alert(tr('영수증 내용을 복사했습니다'));}catch(e){prompt(m[2],message);}};
+function restoreResult(){if(!location.hash.startsWith('#result='))return;try{if(location.hash.length>12000)throw Error('length');const payload=JSON.parse(decodeURIComponent(location.hash.slice(8)));if(![1,2,3].includes(payload.v)||!Array.isArray(payload.values)||payload.values.length!==(payload.v===1?17:shareFields.length)||!['none','soju','beer'].includes(payload.drink))throw Error('schema');for(let i=0;i<payload.values.length;i++){const id=shareFields[i],v=payload.values[i];if(typeof v!=='string'||v.length>30)throw Error('value');if(id==='sex'&&!['m','f'].includes(v)||id==='smoke'&&!['never','former','current'].includes(v))throw Error('enum');$(id).value=v;}if(payload.v===1){$('playyears').value=$('age').value;$('workyears').value=$('age').value;}if(payload.v===3&&!['ko','en','ja','zh'].includes(payload.region))throw Error('region');resultRegion=payload.v===3?payload.region:'ko';selectDrink(payload.drink);live();receiptDate=payload.v>=2&&typeof payload.date==='string'&&Number.isFinite(Date.parse(payload.date))?payload.date:null;if(!generate())throw Error('validation');$('receipt').classList.remove('printing');$('newReceipt').hidden=false;requestAnimationFrame(()=>$('receipt').scrollIntoView({block:'start'}));}catch(e){$('f').reset();applyRegionalDefaults();$('receipt').hidden=true;$('printer').hidden=true;$('actions').hidden=true;$('sources').hidden=true;$('linkError').hidden=false;$('linkError').textContent=({ko:'공유 링크가 올바르지 않습니다. 새 영수증을 만들어 주세요.',en:'Invalid shared link. Create a new receipt.',ja:'共有リンクが無効です。新しいレシートを作成してください。',zh:'分享链接无效，请创建新收据。'})[lang];$('newReceipt').hidden=false;}}
+$('newReceipt').onclick=()=>{resultRegion=lang;history.replaceState(null,'',location.href.split('#')[0]);location.reload();};
+const regionalDefaults={ko:{age:45,sleep:7.5,play:2.5,work:7,playyears:20,workyears:25,goal:85,exercise:150,exyears:10,height:173,weight:74},en:{age:39,sleep:8,play:3,work:7,playyears:20,workyears:19,goal:80,exercise:150,exyears:10,height:175,weight:90},ja:{age:49,sleep:7,play:2.5,work:7,playyears:20,workyears:29,goal:85,exercise:120,exyears:10,height:172,weight:70},zh:{age:40,sleep:8,play:3,work:8,playyears:15,workyears:20,goal:80,exercise:120,exyears:10,height:170,weight:70}};
+function applyRegionalDefaults(){resultRegion=lang;const values={...regionalDefaults[lang],sex:'m',smoke:'never',cigs:10,pastcigs:10,smokeyears:0,freq:1,qty:1,drinkyears:0};for(const [id,v] of Object.entries(values))$(id).value=String(v);selectDrink('none');live();}
+const defaultNotice=document.createElement('p');defaultNotice.className='default-notice';defaultNotice.textContent=({ko:'지역별 대표 예시값입니다. 실제 본인의 값으로 수정해 주세요.',en:'These are illustrative regional defaults. Edit them to match your own habits.',ja:'地域別の入力例です。ご自身の値に変更してください。',zh:'这些是地区参考示例值，请修改为您自己的实际数据。'})[lang];$('f').querySelector('.screen').after(defaultNotice);
+applyRegionalDefaults();
+restoreResult();
+</script><script id="adsense-integration">/* Deployment configuration: leave disabled until publisher approval, ad units,
+   required consent setup and site privacy disclosures are in place.
+   This integration does not explicitly send receipt fields to the ad service.
+   Shared result URLs may contain sensitive data, so do not load ads on them. */
+const ADSENSE_CONFIG={enabled:false,client:'',slots:{top:'',bottom:''}};
+function initLifeAds(){
+ const cfg=ADSENSE_CONFIG;
+ if(!cfg.enabled||!/^ca-pub-\d+$/.test(cfg.client)||location.protocol!=='https:'||location.hash.startsWith('#result='))return;
+ const placements=[...document.querySelectorAll('.ad-space')].filter(el=>/^\d+$/.test(cfg.slots[el.dataset.placement]||''));
+ if(!placements.length)return;
+ const script=document.createElement('script');script.async=true;script.crossOrigin='anonymous';script.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+encodeURIComponent(cfg.client);
+ script.onload=()=>{for(const el of placements){try{const ins=document.createElement('ins');ins.className='adsbygoogle';ins.style.display='block';ins.dataset.adClient=cfg.client;ins.dataset.adSlot=cfg.slots[el.dataset.placement];ins.dataset.adFormat='auto';ins.dataset.fullWidthResponsive='true';el.querySelector('.ad-body').append(ins);el.classList.add('is-live');(window.adsbygoogle=window.adsbygoogle||[]).push({});}catch(err){console.warn('Ad initialization failed',err);el.classList.remove('is-live');el.querySelector('ins')?.remove();}}};
+ document.head.append(script);
+}
+initLifeAds();
+</script></body></html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://life-to-receipt.kro.kr/sitemap.xml
